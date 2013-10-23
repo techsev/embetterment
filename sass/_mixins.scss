@@ -1,0 +1,98 @@
+// Setting REM font sizes while still suppling IE8 and under fallback
+// Credit to Chris Coyer from Css-Tricks on this one, 
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*16}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  } 
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  } 
+  
+  #{$property}: $pxValues; 
+  #{$property}: $remValues; 
+}
+
+@mixin progressPercentage($progress){
+	div.progressBar div {
+		width: $progress;
+		background: rgb(100% - $progress, $progress, 50%);
+	}
+
+	div.progressBar div:after {
+		content: "#{round($progress)}"
+	}
+	
+}
+
+@mixin breakpoint($point) {
+  @if $point == big {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 650px)  { @content; }
+  }
+}
+
+
+//// Grid Mixins and Variables
+
+$gutter_size: 2.76%;
+$number_of_cols: 12;
+	
+	
+	
+
+
+@mixin grid_column($num_col)
+{
+	$single_col_width: ((((($number_of_cols - 1) * $gutter_size) - 100) * -1) / $number_of_cols);
+	width: ($single_col_width * $num_col) + ($gutter_size * ($num_col - 1));
+
+}
+
+.column {
+	
+	float: left;
+	position: relative;
+
+	@include breakpoint(big) { margin-left: $gutter_size; }
+  	@include breakpoint(medium) { margin-left: $gutter_size; }
+ 	@include breakpoint(small) { margin-left: 0; }
+}
+
+.first {
+  margin-left: 0;
+}
+
+.last {
+  float: right;
+}
+
