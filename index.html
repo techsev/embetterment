@@ -218,6 +218,39 @@
 			
 		</aside>
 		</section>
+		<section>
+			<h2>Weight Loss Progress Bar (Dynamicly Updated)</h2>
+				<ul><li class="WEIGHT">
+					<div class="progressBar"><div></div></div>
+				</li></ul>
+				<p></p>
+
+				</li>
+				<aside class="method-description ">
+		<div class="shadow-liner"></div>
+			<div class="description-shrink">
+			<h6>Dynamic Progress Bars using outside data</h6>
+			<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
+ 
+<ol>
+<li>I want to be able to just change a variable at any time manually.</li>
+<li>I want to be able to add an project entry to my site that will increase my progress by adding the original value plus my gained “experience”, like a role playing game.</li>
+<li>I want to be able have certain progress bars be updated by referencing certain APIs and other resources.</li>
+</ol>
+
+<p>Option 1 was doable now but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
+
+<p>Option 2 will be trickier, since I’m not planning to have the site use any back end database. I will get to this one later.</p>
+
+<p>So I’ve decided to work on option 3 for now. I’m going to use node.js and grunt to pull data from twitter to update my weight progress.</p>
+
+<p>Ideally I wanted to have grunt pull the data from the web service “My Fitness Pal” since I currently use it to track my weight progress, however, their API tools are currently private. However, they do allow for automatic posting to twitter, so I created a twitter account, “SeveIsFat” that was exclusively for this purpose. From there I created a node.js script that pulls the most recent tweet on my account, strips the everything but the amount of weight I’ve lost since I started tracking, and updates a file that holds exclusively that variable which then gets include imported into my <code>_progress.scss</code> file, which is where all my current progress goal variables are saved.</p>
+
+<p>Once / If I get the My fitness Pal API keys I’ll update this to allow for a direct link to the data, but for now it’s the best I could think of.</p><div class="clearfix"></div>
+			</div>
+			<div class="pull-down-tab">
+			<h4><div class="drop-down-arrow">&#9660</div> How was this made <div class="drop-down-arrow">&#9660</div></h4></div></aside>
+		</section>
 		<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="techsev.github.com/resume">Resume</a> / <a href="techsev.github.com/">GitHub</a></footer>
 	</body>
 </html>

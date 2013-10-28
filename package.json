@@ -1,0 +1,30 @@
+{
+  "name": "embetterment",
+  "version": "0.0.0",
+  "description": "My testbed / sandbox project where I try new web technologies",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techsev/embetterment.git"
+  },
+  "keywords": [
+    "Betterment",
+    "Portfolio",
+    "Sandbox"
+  ],
+  "author": "Seve Savoie Teruel",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/techsev/embetterment/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "mtwitter": "~1.5.2",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-git": "~0.1.5"
+  }
+}

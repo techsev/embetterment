@@ -55,9 +55,10 @@
 
 .WEIGHT {
 
-	$previous-weight: 305;
+	$previous-weight: 281;
 	$goal-weight: 185;
-	$current-weight: 200;
+	@import "_mfpWeight.scss";
+	$current-weight: $previous-weight - $weight-lost;
 	$weight-progress: (($previous-weight - $current-weight) / ($previous-weight - $goal-weight)) * 100%;
 
 	@include progressPercentage($weight-progress);
