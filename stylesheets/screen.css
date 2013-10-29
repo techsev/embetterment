@@ -262,112 +262,60 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-<<<<<<< HEAD
 /* line 29, ../sass/screen.scss */
-=======
-/* line 28, ../sass/screen.scss */
-a {
-  color: #eeeeee;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* line 35, ../sass/screen.scss */
-a:hover {
-  text-decoration: underline;
-}
-
-/* line 39, ../sass/screen.scss */
->>>>>>> Minor modifications
 nav {
   display: none;
 }
 
-<<<<<<< HEAD
 /* line 34, ../sass/screen.scss */
-=======
-/* line 44, ../sass/screen.scss */
->>>>>>> Minor modifications
 section {
   margin: 0 auto;
 }
 @media (max-width: 1600px) {
-<<<<<<< HEAD
   /* line 34, ../sass/screen.scss */
-=======
-  /* line 44, ../sass/screen.scss */
->>>>>>> Minor modifications
   section {
     width: 60%;
   }
 }
 @media (max-width: 1250px) {
-<<<<<<< HEAD
   /* line 34, ../sass/screen.scss */
-=======
-  /* line 44, ../sass/screen.scss */
->>>>>>> Minor modifications
   section {
     width: 80%;
   }
 }
 @media (max-width: 650px) {
-<<<<<<< HEAD
   /* line 34, ../sass/screen.scss */
-=======
-  /* line 44, ../sass/screen.scss */
->>>>>>> Minor modifications
   section {
     width: 95%;
   }
 }
 @media (max-width: 1600px) {
-<<<<<<< HEAD
   /* line 40, ../sass/screen.scss */
-=======
-  /* line 50, ../sass/screen.scss */
->>>>>>> Minor modifications
   section .column {
     width: 31.49333%;
   }
 }
 @media (max-width: 1250px) {
-<<<<<<< HEAD
   /* line 40, ../sass/screen.scss */
-=======
-  /* line 50, ../sass/screen.scss */
->>>>>>> Minor modifications
   section .column {
     width: 31.49333%;
   }
 }
 @media (max-width: 650px) {
-<<<<<<< HEAD
   /* line 40, ../sass/screen.scss */
-=======
-  /* line 50, ../sass/screen.scss */
->>>>>>> Minor modifications
   section .column {
     width: 100%;
   }
 }
 
-<<<<<<< HEAD
 /* line 60, ../sass/screen.scss */
-=======
-/* line 70, ../sass/screen.scss */
->>>>>>> Minor modifications
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0.25em 0;
   color: #eeeeee;
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 /* line 67, ../sass/screen.scss */
-=======
-/* line 77, ../sass/screen.scss */
->>>>>>> Minor modifications
 h1, .h1 {
   font-size: 30px;
   font-size: 3rem;
@@ -376,20 +324,12 @@ h1, .h1 {
   letter-spacing: -0.07em;
 }
 
-<<<<<<< HEAD
 /* line 74, ../sass/screen.scss */
-=======
-/* line 84, ../sass/screen.scss */
->>>>>>> Minor modifications
 h1.site-name {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
   padding: 1em 0 0 0;
 }
-<<<<<<< HEAD
 /* line 84, ../sass/screen.scss */
-=======
-/* line 94, ../sass/screen.scss */
->>>>>>> Minor modifications
 h1.site-name .char7 {
   display: inline-block;
   -webkit-transform: rotate(25deg);
@@ -400,11 +340,7 @@ h1.site-name .char7 {
   margin-left: 0.1em;
 }
 
-<<<<<<< HEAD
 /* line 94, ../sass/screen.scss */
-=======
-/* line 104, ../sass/screen.scss */
->>>>>>> Minor modifications
 h2.tag-line {
   padding: 0 0 3em 0;
   text-align: center;
@@ -414,11 +350,7 @@ h2.tag-line {
   text-shadow: rgba(0, 0, 0, 0.8) 0.1em 0.1em 0.2em;
 }
 
-<<<<<<< HEAD
 /* line 103, ../sass/screen.scss */
-=======
-/* line 113, ../sass/screen.scss */
->>>>>>> Minor modifications
 h3 {
   font-size: 15px;
   font-size: 1.5rem;
@@ -426,11 +358,7 @@ h3 {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
 }
 
-<<<<<<< HEAD
 /* line 109, ../sass/screen.scss */
-=======
-/* line 119, ../sass/screen.scss */
->>>>>>> Minor modifications
 h4 {
   font-size: 7px;
   font-size: 0.7rem;
@@ -439,11 +367,7 @@ h4 {
   letter-spacing: 0.2em;
 }
 
-<<<<<<< HEAD
 /* line 117, ../sass/screen.scss */
-=======
-/* line 127, ../sass/screen.scss */
->>>>>>> Minor modifications
 aside {
   position: relative;
   overflow: hidden;
@@ -451,11 +375,7 @@ aside {
   width: 90%;
   margin: 0 auto;
 }
-<<<<<<< HEAD
 /* line 119, ../sass/screen.scss */
-=======
-/* line 129, ../sass/screen.scss */
->>>>>>> Minor modifications
 aside .shadow-liner {
   width: 100%;
   height: 1em;
@@ -464,11 +384,7 @@ aside .shadow-liner {
   box-shadow: #111111 0 0.25em 1em -0.25em;
   position: relative;
 }
-<<<<<<< HEAD
 /* line 133, ../sass/screen.scss */
-=======
-/* line 138, ../sass/screen.scss */
->>>>>>> Minor modifications
 aside .description-shrink {
   padding: 2%;
   width: 80%;
@@ -481,7 +397,6 @@ aside .description-shrink {
   letter-spacing: 0.01em;
   font-family: Helvetica, Arial, sans-serif;
 }
-<<<<<<< HEAD
 /* line 144, ../sass/screen.scss */
 aside .description-shrink p {
   padding: 0.5em 0;
@@ -491,12 +406,6 @@ aside .description-shrink a {
   color: #eeeeee;
   text-decoration: none;
 }
-=======
-/* line 149, ../sass/screen.scss */
-aside .description-shrink p {
-  padding: 0.5em 0;
-}
->>>>>>> Minor modifications
 /* line 163, ../sass/screen.scss */
 aside .description-shrink, aside .pull-down-tab {
   margin: 0 auto;

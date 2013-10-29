@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
 
   // grunt.registerTask('default', ['compass:dev']);
-grunt.registerTask('default', ['getWeight','compass:dev', 'gitcheckout']);
+grunt.registerTask('default', ['getWeight','compass:dev']);
  grunt.registerTask('getWeight', 'User twitter API call to get weight', function() {
   
   var done = this.async();
