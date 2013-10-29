@@ -241,6 +241,11 @@ footer {
 	margin: 0 auto;
 	color: $white;
 	@include font-size(0.8);
-	color: lighten($grey,20);
+
 	text-align:center;
+
+	a
+	{
+		color: $white; 
+	}
 }

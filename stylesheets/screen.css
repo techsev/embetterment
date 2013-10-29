@@ -484,6 +484,9 @@ footer {
   color: #eeeeee;
   font-size: 8px;
   font-size: 0.8rem;
-  color: #626262;
   text-align: center;
+}
+/* line 248, ../sass/screen.scss */
+footer a {
+  color: #eeeeee;
 }
