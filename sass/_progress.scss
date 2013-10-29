@@ -1,0 +1,121 @@
+// Data values for progress bar. 
+
+//CAREER PROGRESS VARIABLES
+
+.HTMLPHPMYSQL {
+	$HTML-knowledge: 80%;
+	$PHP-knowledge: 70%;
+	$MYSQL-knowledge: 70%;
+	$overall-HTML-PHP-MYSQL-progress: ($HTML-knowledge + $PHP-knowledge + $MYSQL-knowledge) / 3;
+	@include progressPercentage($overall-HTML-PHP-MYSQL-progress);	
+
+}
+
+
+
+.JSJQUERY {
+	$javascript-knowledge: 70%;
+	$jquery-knowledge: 55%;
+	$overall-js-jquery-progress: ($javascript-knowledge + $jquery-knowledge) / 2;
+	@include progressPercentage($overall-js-jquery-progress);
+}
+
+.CSSLESSSASSCOMPASS {
+	$CSS-knowledge: 75%;
+	$LESS-knowledge: 50%;
+	$SASS-knowledge: 40%;
+	$COMPASS-knowledge: 40%;
+	$overall-CSS-LESS-SASS-COMPASS-progress: ($CSS-knowledge + $LESS-knowledge + $SASS-knowledge + $COMPASS-knowledge) / 4;
+	@include progressPercentage($overall-CSS-LESS-SASS-COMPASS-progress);
+	
+	
+}
+
+.GITGITHUB {
+	$GIT-Command-line-knowledge: 10%;
+	$GITHUB-Desktop-software-knowledge: 80%;
+	$version-control-concepts: 50%;
+	$overall-GIT-GITHUB-progress: ($GIT-Command-line-knowledge + $GITHUB-Desktop-software-knowledge + $version-control-concepts) / 3;
+	@include progressPercentage($overall-GIT-GITHUB-progress);
+}
+
+
+.OTHERWEBTECHNOLOGIES {
+	$NODEJS-knowledge: 10%;
+	$GRUNT-knowledge: 10%;
+	$NoSQL-Database-knowledge: 10%;
+	$RUBY-On-Rails-Knowledge: 10%;
+	$Python-knowledge: 10%;
+	$APP-development-knowledge: 10%;
+	$overall-Other-Web-Technologies-progress: ($NODEJS-knowledge + $GRUNT-knowledge + $NoSQL-Database-knowledge + $RUBY-On-Rails-Knowledge + $Python-knowledge + $APP-development-knowledge) / 6;
+	@include progressPercentage($overall-Other-Web-Technologies-progress);
+
+}
+//HEALTH PROGRESS VARIABLES	
+
+.WEIGHT {
+
+	$previous-weight: 281;
+	$goal-weight: 185;
+	@import "_mfpWeight.scss";
+	$current-weight: $previous-weight - $weight-lost;
+	$weight-progress: (($previous-weight - $current-weight) / ($previous-weight - $goal-weight)) * 100%;
+
+	@include progressPercentage($weight-progress);
+}
+
+.VISION {
+	@include progressPercentage(80%);
+}
+
+.DENTAL {
+	@include progressPercentage(50%);
+}
+
+.PHYSIQUE {
+	@include progressPercentage(20%);
+}
+
+.SIXPACKABS {
+	$number-of-abs: 6;
+	$current-number-of-visible-abs: 0;
+	$six-pack-abs-progress: $current-number-of-visible-abs / $number-of-abs * 100%;
+	@include progressPercentage($six-pack-abs-progress);
+}
+
+.PARENTING {
+	$number-of-children: 2;
+	$number-of-children-wanted: 3;
+	$parenting-progress: $number-of-children / $number-of-children-wanted * 100%;
+	@include progressPercentage($parenting-progress);
+}
+
+.WEDDING {
+	$wedding-budget: 10000;
+	$current-amount-allocated: 3500;
+	$wedding-progress: $current-amount-allocated / $wedding-budget * 100%;
+	@include progressPercentage($wedding-progress);
+}
+
+.HOMEOWNERSHIP {
+	$expected-downpayment: 20000;
+	$current-amount-allocated: 0;
+	$home-ownership-progress: $current-amount-allocated / $expected-downpayment * 100%;
+	@include progressPercentage($home-ownership-progress);
+}
+
+.TRANSPORTATION {
+	$number-of-g-levels: 3;
+	$current-g-level: 1;
+	$transporation-progress: $current-g-level / $number-of-g-levels * 100%;
+	@include progressPercentage($transporation-progress);
+}
+
+.LOTTERYWINNER {
+	$amount-id-like-to-win-on-the-lottery: 100000;
+	$total-amount-won-gambling: 550;
+	$lottery-progress: $total-amount-won-gambling / $amount-id-like-to-win-on-the-lottery * 100%;
+	@include progressPercentage($lottery-progress);
+}
+
+

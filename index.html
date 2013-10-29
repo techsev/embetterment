@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, user-scalable=false;">
+			<title>The Betterment of Seve</title>
+			<link rel="stylesheet" href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css">
+			<!--[if lt IE 8]>
+			<link rel="stylesheet" href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css">
+			<![endif]-->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script src="js/jquery.lettering.js"></script>
+			<script src="js/jquery.fittext.js"></script>
+			<script type="text/javascript">
+
+			function rotate(object, degrees) {
+			    object.css({
+			  '-webkit-transform' : 'rotate('+degrees+'deg)',
+			     '-moz-transform' : 'rotate('+degrees+'deg)',  
+			      '-ms-transform' : 'rotate('+degrees+'deg)',  
+			       '-o-transform' : 'rotate('+degrees+'deg)',  
+			          'transform' : 'rotate('+degrees+'deg)',  
+			               'zoom' : 1
+
+		    });
+}
+
+			$( document ).ready(function() {
+    			$(".site-name").lettering();
+				$(".site-name").fitText(1.5,{minFontSize: '30px'});
+				$(".tag-line").fitText(3.5,{minFontSize: '12px'});
+
+				$(".pull-down-tab").click(function(){
+
+					
+					if($(this).siblings('.description-shrink').css('display') == 'block')
+					{
+						rotate($(this).find('.drop-down-arrow'), 0);
+
+					} else {
+						rotate($(this).find('.drop-down-arrow'), 180);
+					}
+
+
+					
+					$(this).siblings('.description-shrink').slideToggle("slow",function(){
+						rotate($(this).find('.drop-down-arrow'), 180);
+					});
+					
+
+				});
+
+
+			});
+			
+			</script>
+
+	</head>
+	<body>
+		<header>
+		<div class='title-wrapper'>
+			<h1 class="site-name">The Betterment of Seve</h1>
+			<h2 class="tag-line">The chronicles of my self-improvement.</h2>
+
+		</div>
+		<nav><ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Progress</a></li>
+			<li><a href="">Career</a></li>
+			<li><a href="">Health</a></li>
+		</ul></nav>
+		</header>
+		<section class="progress">
+		<div class="column career first">
+		<h3>Career</h3>
+		<ul>
+			<li class="HTMLPHPMYSQL">
+				<h4>HTML / PHP / MYSQL</h4>
+				<div class="progressBar"><div></div></div>
+				<h5>View Percentage Breakdown</h5>
+				<p></p>
+			</li>
+			<li class="JSJQUERY">
+				<h4>Javascript / Jquery</h4>
+				<div class="progressBar"><div></div></div>
+				<h5>View Percentage Breakdown</h5>
+				<p></p>
+			</li>
+			<li class="CSSLESSSASSCOMPASS">
+				<h4>CSS Preprocessors</h4>
+				<div class="progressBar"><div></div></div>
+				<h5>View Percentage Breakdown</h5>
+				<p></p>
+			</li>
+			<li class="GITGITHUB">
+				<h4>Version Control</h4>
+				<div class="progressBar"><div></div></div>
+				<h5>View Percentage Breakdown</h5>
+				<p></p>
+			</li>
+			<li class="OTHERWEBTECHNOLOGIES">
+				<h4>Other Web Trends</h4>
+				<div class="progressBar"><div></div></div>
+				<h5>View Percentage Breakdown</h5>
+				<p></p>
+			</li>
+		</ul>
+		</div>
+		<div class="column health">
+			<h3>Health</h3>
+			<ul>
+				<li class="WEIGHT">
+					<h4>Weight</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+
+				</li>
+				<li class="VISION">
+					<h4>Vision</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+				<li class="DENTAL">
+					<h4>Dental</h4>
+					
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+				<li class="PHYSIQUE">
+					<h4>Physique</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+
+				</li>
+				<li class="SIXPACKABS">
+					<h4>Six Pack Abs</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+			</ul>
+		</div>
+		<div class="column other last">
+
+			<h3>Other</h3>
+			<ul>
+				<li class="PARENTING">
+					<h4>Parenting</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+				<li class="WEDDING">
+					<h4>Wedding</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+				<li class="HOMEOWNERSHIP">
+					<h4>Home Ownership</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+				<li class="TRANSPORTATION">
+					<h4>Transportation</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+				<li class="LOTTERYWINNER">
+					<h4>Lottery Winner</h4>
+					<div class="progressBar"><div></div></div>
+					<h5>View Percentage Breakdown</h5>
+				<p></p>
+				</li>
+			</ul>
+		</div>
+		<aside class="method-description ">
+		<div class="shadow-liner"></div>
+			<div class="description-shrink">
+			<h6>Dynamic, Varible driven Progress Bars</h6>
+			<div data-height="268" data-theme-id="0" data-slug-hash="nlszq" data-user="techsev" data-default-tab="html" class='codepen'><pre><code>&lt;li class=&quot;WEIGHT&quot;&gt;
+	&lt;h4&gt;Weight&lt;&#x2F;h4&gt;
+	&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;
+
+&lt;li class=&quot;SIXPACKABS&quot;&gt;
+	&lt;h4&gt;Six Pack Abs&lt;&#x2F;h4&gt;
+	&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;
+
+&lt;li class=&quot;CSSLESSSASSCOMPASS&quot;&gt;
+	&lt;h4&gt;CSS Preprocessor Knowledge&lt;&#x2F;h4&gt;
+	&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;</code></pre>
+<p>See the Pen <a href='http://codepen.io/techsev/pen/nlszq'>%= penName %></a> by Seve Teruel (<a href='http://codepen.io/techsev'>@techsev</a>) on <a href='http://codepen.io'>CodePen</a></p>
+</div><script async src="http://codepen.io/assets/embed/ei.js"></script>
+<p>What I wanted to do was have a way to quickly and dynamicly have progress bars tracking my skills and goals that could easily be modified by changing 1 - 2 variables. I considered making it database driven or using PHP however, my goal for this site is to try techniques i’ve never used before, including making an entire static website. </p>
+
+<p>So instead I decided to use SASS and Compass. That way I can make changes fairly quickly on, compile the CSS and then push to git pages.  </p>
+
+<p>Where the CSS differs for each progress bar is the width, color and the percentage amount.</p>
+
+<p>I created a SASS mixin that when given a percentage, would set it as the inner-div’s width, the “content” field of the div:after class as well as modify the background color of the inner div between the colors red and green. </p>
+
+<p>Then all I have to do was supply the required percentage for each bar, which in some cases I just supplied directly or in others, I used SASS variables and math to generate the percentage. I had a little fun with my <a href="https://github.com/techsev/embetterment/blob/master/sass/_progress.scss">SASS Progress Bar Variables</a></p>
+			<div class="clearfix"></div>
+			</div>
+			<div class="pull-down-tab">
+			<h4><div class="drop-down-arrow">&#9660</div> How was this made <div class="drop-down-arrow">&#9660</div></h4></div>
+			
+		</aside>
+		</section>
+		<section>
+			<h2>Weight Loss Progress Bar (Dynamicly Updated)</h2>
+				<ul><li class="WEIGHT">
+					<div class="progressBar"><div></div></div>
+				</li></ul>
+				<p></p>
+
+				</li>
+				<aside class="method-description ">
+		<div class="shadow-liner"></div>
+			<div class="description-shrink">
+			<h6>Dynamic Progress Bars using outside data</h6>
+			<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
+ 
+<ol>
+<li>I want to be able to just change a variable at any time manually.</li>
+<li>I want to be able to add an project entry to my site that will increase my progress by adding the original value plus my gained “experience”, like a role playing game.</li>
+<li>I want to be able have certain progress bars be updated by referencing certain APIs and other resources.</li>
+</ol>
+
+<p>Option 1 was doable now but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
+
+<p>Option 2 will be trickier, since I’m not planning to have the site use any back end database. I will get to this one later.</p>
+
+<p>So I’ve decided to work on option 3 for now. I’m going to use node.js and grunt to pull data from twitter to update my weight progress.</p>
+
+<p>Ideally I wanted to have grunt pull the data from the web service “My Fitness Pal” since I currently use it to track my weight progress, however, their API tools are currently private. However, they do allow for automatic posting to twitter, so I created a twitter account, “SeveIsFat” that was exclusively for this purpose. From there I created a node.js script that pulls the most recent tweet on my account, strips the everything but the amount of weight I’ve lost since I started tracking, and updates a file that holds exclusively that variable which then gets include imported into my <code>_progress.scss</code> file, which is where all my current progress goal variables are saved.</p>
+
+<p>Once / If I get the My fitness Pal API keys I’ll update this to allow for a direct link to the data, but for now it’s the best I could think of.</p><div class="clearfix"></div>
+			</div>
+			<div class="pull-down-tab">
+			<h4><div class="drop-down-arrow">&#9660</div> How was this made <div class="drop-down-arrow">&#9660</div></h4></div></aside>
+		</section>
+		<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="techsev.github.com/resume">Resume</a> / <a href="techsev.github.com/">GitHub</a></footer>
+	</body>
+</html>
