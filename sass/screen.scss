@@ -26,6 +26,17 @@ html {
   -webkit-font-smoothing: antialiased; 
 }
 
+a{
+	color: $white;
+	font-weight: bold;
+	text-decoration:none;
+
+}
+
+a:hover {
+	text-decoration: underline;	
+}
+
 nav {
 	display:none;
 }
