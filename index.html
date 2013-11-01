@@ -73,7 +73,14 @@
 			<li><a href="">Health</a></li>
 		</ul></nav>
 		</header>
+		<section class="about-this">
+			<h2>What's this site about?</h2>
+			<p>Glad you asked. My name is Seve Teruel, I’m an up and coming Web developer working just outside of Toronto and living even further outside of Toronto. I've spent the last year working for a publishing company that mainly deals with selling financial and health publications through email campaigns. I've started this site as a way to show case my progress as both a web developer as well as a human being.</p>
+			<p>I’ve been listening to lots of different web development podcasts as of late, so that I can know what I don’t know, and learn it. Stuff like CSS preprocessors, NODE.js, Responsive images. e.t.c. I’ve been dying to try out these new tech trends on projects at work, however, there usually isn't enough time to implement them. So instead I decided to build this website as a sandbox to try out ideas as well as a showcase of the skills I do have.</p>
+		</section>
+		<section class="goals topper"><h2 class="center">Life Goals Progress</h2></section>
 		<section class="progress">
+		
 		<div class="column career first">
 		<h3>Career</h3>
 		<ul>
@@ -183,6 +190,11 @@
 				</li>
 			</ul>
 		</div>
+		<h3>Overall Betterment Progress</h3>
+				<ul><li class="OVERALL-PROGRESS">
+					<div class="progressBar"><div></div></div>
+				</li></ul>
+				<p></p>
 		<aside class="method-description ">
 		<div class="shadow-liner"></div>
 			<div class="description-shrink">
@@ -219,27 +231,28 @@
 			
 		</aside>
 		</section>
-		<section>
-			<h2>Weight Loss Progress Bar (Dynamicly Updated)</h2>
+		<section class="projects topper">
+			<h2>Projects & Works</h2>
+		</section>
+		<section class="dynamic-progress-bar">
+			<h3>Weight Loss Progress Bar (Dynamicly Updated)</h3>
 				<ul><li class="WEIGHT">
 					<div class="progressBar"><div></div></div>
 				</li></ul>
 				<p></p>
-
-				</li>
 				<aside class="method-description ">
 		<div class="shadow-liner"></div>
 			<div class="description-shrink">
 			<h6>Dynamic Progress Bars using outside data</h6>
 			<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
  
-<ol>
+<ul class="show-list">
 <li>I want to be able to just change a variable at any time manually.</li>
 <li>I want to be able to add an project entry to my site that will increase my progress by adding the original value plus my gained “experience”, like a role playing game.</li>
 <li>I want to be able have certain progress bars be updated by referencing certain APIs and other resources.</li>
-</ol>
+</ul>
 
-<p>Option 1 was doable now but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
+<p>Option 1 was doable but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
 
 <p>Option 2 will be trickier, since I’m not planning to have the site use any back end database. I will get to this one later.</p>
 
@@ -248,6 +261,18 @@
 <p>Ideally I wanted to have grunt pull the data from the web service “My Fitness Pal” since I currently use it to track my weight progress, however, their API tools are currently private. However, they do allow for automatic posting to twitter, so I created a twitter account, “SeveIsFat” that was exclusively for this purpose. From there I created a node.js script that pulls the most recent tweet on my account, strips the everything but the amount of weight I’ve lost since I started tracking, and updates a file that holds exclusively that variable which then gets include imported into my <code>_progress.scss</code> file, which is where all my current progress goal variables are saved.</p>
 
 <p>Once / If I get the My fitness Pal API keys I’ll update this to allow for a direct link to the data, but for now it’s the best I could think of.</p><div class="clearfix"></div>
+			</div>
+			<div class="pull-down-tab">
+			<h4><div class="drop-down-arrow">&#9660</div> How was this made <div class="drop-down-arrow">&#9660</div></h4></div></aside>
+		</section>
+		<section class="">
+
+		<aside class="method-description ">
+		<div class="shadow-liner"></div>
+			<div class="description-shrink">
+			<h6>Grunt Generator Static blog</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, labore ullam odit id laborum cupiditate deleniti veritatis ad! Eaque hic vero consectetur quibusdam. Libero cum rem commodi iste asperiores ab!</p>
+			<div class="clearfix"></div>
 			</div>
 			<div class="pull-down-tab">
 			<h4><div class="drop-down-arrow">&#9660</div> How was this made <div class="drop-down-arrow">&#9660</div></h4></div></aside>

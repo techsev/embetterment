@@ -32,6 +32,7 @@ nav {
 
 
 section {
+	width: 70%;
 	@include breakpoint(big) { width: 60%; }
   	@include breakpoint(medium) { width: 80%; }
  	@include breakpoint(small) { width: 95%; }
@@ -55,6 +56,7 @@ section {
 	.other {
 		@extend .last;
 	}
+
 }
 
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -91,6 +93,16 @@ h1.site-name{
 
 }
 
+h2 {
+	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
+	@include rem-fallback('font-size', 1.8);
+
+	.center {
+		text-align: center;
+	}
+}
+
+
 h2.tag-line {
 	padding: 0 0 3em 0 ;
 	text-align: center;
@@ -99,6 +111,8 @@ h2.tag-line {
 	text-transform: uppercase;
 	@include text-shadow(rgba(black, 0.8) 0.1em 0.1em 0.2em );
 }
+
+
 
 h3 {
 	@include font-size(1.5);
@@ -110,7 +124,11 @@ h4 {
 	@include font-size(0.7);
 	font-family: $sans-serif;
 	font-weight: normal;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.1em;
+}
+
+ul.show-list li:before {
+	content: ">";
 }
 
 //How it's made drop down
@@ -187,8 +205,25 @@ aside {
 	}
 }
 
+section.topper {
+	border-bottom: 2px dashed darken($white, 50);
+	margin-bottom: 0.5em;
+}
 
+//About this site
 
+section.about-this {
+	padding-bottom: 3em;
+	p {
+		text-indent: 2em;
+		color: $white;
+		padding: 0.5em;
+		@include rem-fallback('font-size',0.8);
+		line-height: 1.5;
+		
+	}
+
+}
 
 
 
