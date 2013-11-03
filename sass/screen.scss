@@ -45,7 +45,7 @@ section {
  		@include breakpoint(small) { @include grid_column(12); }
 	}
 
-	.career {
+	.knowledge {
 		@extend .first;
 	}
 
