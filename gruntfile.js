@@ -123,8 +123,23 @@ var done = this.async();
 
 
 });
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
+
+grunt.registerTask('gh-pages-push','Use Twitter API to post overall progress percentage',function(){
+  console.log('start');
+  var sys = require('sys')
+  var exec = require('child_process').exec;
+  exec('git add .', function (err, stdout, stderr) {
+      console.log(err);
+      util.puts("hello");
+    util.puts(stdout);
+    });
 >>>>>>> gh-pages
   
+
+});
 
 
 };

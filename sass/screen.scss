@@ -62,7 +62,7 @@ section {
  		@include breakpoint(small) { @include grid_column(12); }
 	}
 
-	.career {
+	.knowledge {
 		@extend .first;
 	}
 
@@ -79,7 +79,7 @@ section {
 }
 
 section.auto-progress-tweeter {
-	height: 100em;
+	
 
 >>>>>>> gh-pages
 }
@@ -254,7 +254,7 @@ section.topper {
 section.about-this {
 	padding-bottom: 3em;
 	p {
-		text-indent: 2em;
+		
 		color: $white;
 		padding: 0.5em;
 		@include rem-fallback('font-size',0.8);
