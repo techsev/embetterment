@@ -60,7 +60,7 @@ section {
 }
 
 section.auto-progress-tweeter {
-	height: 100em;
+	
 
 }
 
@@ -220,7 +220,7 @@ section.topper {
 section.about-this {
 	padding-bottom: 3em;
 	p {
-		text-indent: 2em;
+		
 		color: $white;
 		padding: 0.5em;
 		@include rem-fallback('font-size',0.8);

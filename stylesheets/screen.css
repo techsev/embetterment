@@ -319,11 +319,6 @@ section {
   }
 }
 
-/* line 62, ../sass/screen.scss */
-section.auto-progress-tweeter {
-  height: 100em;
-}
-
 /* line 67, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0.25em 0;
@@ -478,7 +473,6 @@ section.about-this {
 }
 /* line 222, ../sass/screen.scss */
 section.about-this p {
-  text-indent: 2em;
   color: #eeeeee;
   padding: 0.5em;
   font-size: 12.8px;
