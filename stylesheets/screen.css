@@ -1,54 +1,538 @@
-/*
-Syntax error: Invalid CSS after "}": expected selector or at-rule, was "<<<<<<< HEAD"
-        on line 29 of C:/wamp/www/projects/embetterment/sass/screen.scss
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-C:/wamp/www/projects/embetterment/sass/screen.scss:29
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/scss/parser.rb:1148:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/scss/parser.rb:1084:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/scss/parser.rb:28:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:342:in `_to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-C:/Ruby193/bin/compass:23:in `load'
-C:/Ruby193/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 29 of C:/wamp/www/projects/embetterment/sass/screen.scss"; }
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 81, ../sass/_mixins.scss */
+.column {
+  float: left;
+  position: relative;
+}
+@media (max-width: 1600px) {
+  /* line 81, ../sass/_mixins.scss */
+  .column {
+    margin-left: 2.76%;
+  }
+}
+@media (max-width: 1250px) {
+  /* line 81, ../sass/_mixins.scss */
+  .column {
+    margin-left: 2.76%;
+  }
+}
+@media (max-width: 650px) {
+  /* line 81, ../sass/_mixins.scss */
+  .column {
+    margin-left: 0;
+  }
+}
+
+/* line 91, ../sass/_mixins.scss */
+.first, section .knowledge {
+  margin-left: 0;
+}
+
+/* line 95, ../sass/_mixins.scss */
+.last, section .other {
+  float: right;
+}
+
+/* line 41, ../sass/_mixins.scss */
+.HTMLPHPMYSQL div.progressBar div {
+  width: 73.33333%;
+  background: #44bb7f;
+}
+/* line 46, ../sass/_mixins.scss */
+.HTMLPHPMYSQL div.progressBar div:after {
+  content: "73%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.JSJQUERY div.progressBar div {
+  width: 70%;
+  background: #4cb27f;
+}
+/* line 46, ../sass/_mixins.scss */
+.JSJQUERY div.progressBar div:after {
+  content: "70%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.CSSLESSSASSCOMPASS div.progressBar div {
+  width: 56.25%;
+  background: #6f8f7f;
+}
+/* line 46, ../sass/_mixins.scss */
+.CSSLESSSASSCOMPASS div.progressBar div:after {
+  content: "56%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.GITGITHUB div.progressBar div {
+  width: 53.33333%;
+  background: #77887f;
+}
+/* line 46, ../sass/_mixins.scss */
+.GITGITHUB div.progressBar div:after {
+  content: "53%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.OTHERWEBTECHNOLOGIES div.progressBar div {
+  width: 17.5%;
+  background: #d22c7f;
+}
+/* line 46, ../sass/_mixins.scss */
+.OTHERWEBTECHNOLOGIES div.progressBar div:after {
+  content: "18%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.WEIGHT div.progressBar div {
+  width: 86.66667%;
+  background: #22dc7f;
+}
+/* line 46, ../sass/_mixins.scss */
+.WEIGHT div.progressBar div:after {
+  content: "87%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.VISION div.progressBar div {
+  width: 80%;
+  background: #33cc7f;
+}
+/* line 46, ../sass/_mixins.scss */
+.VISION div.progressBar div:after {
+  content: "80%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.DENTAL div.progressBar div {
+  width: 50%;
+  background: #7f7f7f;
+}
+/* line 46, ../sass/_mixins.scss */
+.DENTAL div.progressBar div:after {
+  content: "50%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.PHYSIQUE div.progressBar div {
+  width: 20%;
+  background: #cc337f;
+}
+/* line 46, ../sass/_mixins.scss */
+.PHYSIQUE div.progressBar div:after {
+  content: "20%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.SIXPACKABS div.progressBar div {
+  width: 0%;
+  background: #ff007f;
+}
+/* line 46, ../sass/_mixins.scss */
+.SIXPACKABS div.progressBar div:after {
+  content: "0%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.PARENTING div.progressBar div {
+  width: 66.66667%;
+  background: #55a97f;
+}
+/* line 46, ../sass/_mixins.scss */
+.PARENTING div.progressBar div:after {
+  content: "67%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.WEDDING div.progressBar div {
+  width: 35%;
+  background: #a5597f;
+}
+/* line 46, ../sass/_mixins.scss */
+.WEDDING div.progressBar div:after {
+  content: "35%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.HOMEOWNERSHIP div.progressBar div {
+  width: 0%;
+  background: #ff007f;
+}
+/* line 46, ../sass/_mixins.scss */
+.HOMEOWNERSHIP div.progressBar div:after {
+  content: "0%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.TRANSPORTATION div.progressBar div {
+  width: 33.33333%;
+  background: #aa547f;
+}
+/* line 46, ../sass/_mixins.scss */
+.TRANSPORTATION div.progressBar div:after {
+  content: "33%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.LOTTERYWINNER div.progressBar div {
+  width: 0.55%;
+  background: #fd017f;
+}
+/* line 46, ../sass/_mixins.scss */
+.LOTTERYWINNER div.progressBar div:after {
+  content: "1%";
+}
+
+/* line 41, ../sass/_mixins.scss */
+.OVERALL-PROGRESS div.progressBar div {
+  width: 42.84222%;
+  background: #916d7f;
+}
+/* line 46, ../sass/_mixins.scss */
+.OVERALL-PROGRESS div.progressBar div:after {
+  content: "43%";
+}
+
+/* line 20, ../sass/screen.scss */
+html {
+  background: #2f2f2f;
+  font-size: 100%;
+  font-family: "Bitter", "Times News Roman", serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 29, ../sass/screen.scss */
+nav {
+  display: none;
+}
+
+/* line 34, ../sass/screen.scss */
+section {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 1600px) {
+  /* line 34, ../sass/screen.scss */
+  section {
+    width: 60%;
+  }
+}
+@media (max-width: 1250px) {
+  /* line 34, ../sass/screen.scss */
+  section {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  /* line 34, ../sass/screen.scss */
+  section {
+    width: 95%;
+  }
+}
+@media (max-width: 1600px) {
+  /* line 41, ../sass/screen.scss */
+  section .column {
+    width: 31.49333%;
+  }
+}
+@media (max-width: 1250px) {
+  /* line 41, ../sass/screen.scss */
+  section .column {
+    width: 31.49333%;
+  }
+}
+@media (max-width: 650px) {
+  /* line 41, ../sass/screen.scss */
+  section .column {
+    width: 100%;
+  }
+}
+
+/* line 67, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  padding: 0.25em 0;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+/* line 74, ../sass/screen.scss */
+h1, .h1 {
+  font-size: 30px;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Bitter", "Times News Roman", serif;
+  letter-spacing: -0.07em;
+}
+
+/* line 81, ../sass/screen.scss */
+h1.site-name {
+  text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
+  padding: 1em 0 0 0;
+}
+/* line 91, ../sass/screen.scss */
+h1.site-name .char7 {
+  display: inline-block;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  margin-left: 0.1em;
+}
+
+/* line 101, ../sass/screen.scss */
+h2 {
+  text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
+  font-size: 28.8px;
+  font-size: 1.8rem;
+}
+/* line 105, ../sass/screen.scss */
+h2 .center {
+  text-align: center;
+}
+
+/* line 111, ../sass/screen.scss */
+h2.tag-line {
+  padding: 0 0 3em 0;
+  text-align: center;
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.8) 0.1em 0.1em 0.2em;
+}
+
+/* line 122, ../sass/screen.scss */
+h3 {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
+}
+
+/* line 128, ../sass/screen.scss */
+h4 {
+  font-size: 7px;
+  font-size: 0.7rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+/* line 135, ../sass/screen.scss */
+ul.show-list li:before {
+  content: ">";
+}
+
+/* line 140, ../sass/screen.scss */
+aside {
+  position: relative;
+  overflow: hidden;
+  *zoom: 1;
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 142, ../sass/screen.scss */
+aside .shadow-liner {
+  width: 100%;
+  height: 1em;
+  -webkit-box-shadow: #111111 0 0.25em 1em -0.25em;
+  -moz-box-shadow: #111111 0 0.25em 1em -0.25em;
+  box-shadow: #111111 0 0.25em 1em -0.25em;
+  position: relative;
+}
+/* line 156, ../sass/screen.scss */
+aside .description-shrink {
+  padding: 2%;
+  width: 80%;
+  display: none;
+  height: auto;
+  color: #eeeeee;
+  font-size: 8px;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 167, ../sass/screen.scss */
+aside .description-shrink p {
+  padding: 0.5em 0;
+}
+/* line 171, ../sass/screen.scss */
+aside .description-shrink a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+/* line 186, ../sass/screen.scss */
+aside .description-shrink, aside .pull-down-tab {
+  margin: 0 auto;
+  background: #494949;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: #272727 0em 0.35em 0.5em;
+  -moz-box-shadow: #272727 0em 0.35em 0.5em;
+  box-shadow: #272727 0em 0.35em 0.5em;
+}
+/* line 198, ../sass/screen.scss */
+aside .pull-down-tab {
+  width: 60%;
+  margin-bottom: 2.25em;
+  text-align: center;
+  height: 16px;
+  height: 1rem;
+  cursor: pointer;
+}
+/* line 206, ../sass/screen.scss */
+aside .pull-down-tab .drop-down-arrow {
+  display: inline-block;
+}
+
+/* line 213, ../sass/screen.scss */
+section.topper {
+  border-bottom: 2px dashed #6e6e6e;
+  margin-bottom: 0.5em;
+}
+
+/* line 220, ../sass/screen.scss */
+section.about-this {
+  padding-bottom: 3em;
+}
+/* line 222, ../sass/screen.scss */
+section.about-this p {
+  color: #eeeeee;
+  padding: 0.5em;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* line 237, ../sass/screen.scss */
+.progress ul li {
+  margin-bottom: 2em;
+}
+
+/* line 241, ../sass/screen.scss */
+.progress h5 {
+  display: none;
+}
+
+/* line 245, ../sass/screen.scss */
+.progressBar {
+  width: 100%;
+  height: 0.75em;
+  border: 0.125em solid #272727;
+  background: #222222;
+  overflow: hidden;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+
+/* line 258, ../sass/screen.scss */
+.progressBar div {
+  display: block;
+  float: left;
+  height: 1em;
+}
+
+/* line 266, ../sass/screen.scss */
+.progressBar div::after {
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #eeeeee;
+  text-align: right;
+  padding: 0 0.75em;
+  font-size: 6px;
+  font-size: 0.6rem;
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+/* line 280, ../sass/screen.scss */
+footer {
+  margin: 0 auto;
+  color: #eeeeee;
+  font-size: 8px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+/* line 288, ../sass/screen.scss */
+footer a {
+  color: #eeeeee;
+}

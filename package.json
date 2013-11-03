@@ -20,20 +20,14 @@
   "bugs": {
     "url": "https://github.com/techsev/embetterment/issues"
   },
-<<<<<<< HEAD
-  "devDependencies": { 
-=======
+
   "devDependencies": {
->>>>>>> gh-pages
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",
     "mtwitter": "~1.5.2",
     "grunt-contrib-compass": "~0.6.0",
-<<<<<<< HEAD
-    "grunt-git": "~0.1.5"
-=======
     "grunt-git": "~0.1.5",
     "css-parse": "~1.6.0"
->>>>>>> gh-pages
+
   }
 }

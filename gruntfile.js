@@ -20,22 +20,14 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-compass');
-<<<<<<< HEAD
-=======
   
->>>>>>> gh-pages
 
 
 
 
   // grunt.registerTask('default', ['compass:dev']);
-<<<<<<< HEAD
-grunt.registerTask('default', ['getWeight','compass:dev', 'gitcheckout']);
- grunt.registerTask('getWeight', 'User twitter API call to get weight', function() {
-=======
 grunt.registerTask('default', ['getWeight','compass:dev','postProgress']);
 grunt.registerTask('getWeight', 'Use twitter API call to get weight', function() {
->>>>>>> gh-pages
   
   var done = this.async();
 
@@ -73,8 +65,6 @@ var twit = new twitter({
         }
       });
   });
-<<<<<<< HEAD
-=======
 
 grunt.registerTask('postProgress','Use Twitter API to post overall progress percentage',function(){
 var done = this.async();
@@ -123,23 +113,7 @@ var done = this.async();
 
 
 });
-<<<<<<< HEAD
->>>>>>> gh-pages
-=======
-
-grunt.registerTask('gh-pages-push','Use Twitter API to post overall progress percentage',function(){
-  console.log('start');
-  var sys = require('sys')
-  var exec = require('child_process').exec;
-  exec('git add .', function (err, stdout, stderr) {
-      console.log(err);
-      util.puts("hello");
-    util.puts(stdout);
-    });
->>>>>>> gh-pages
   
-
-});
 
 
 };
