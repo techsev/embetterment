@@ -154,12 +154,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 41, ../sass/_mixins.scss */
 .WEIGHT div.progressBar div {
-  width: 85.625%;
-  background: #24da7f;
+  width: 86.66667%;
+  background: #22dc7f;
 }
 /* line 46, ../sass/_mixins.scss */
 .WEIGHT div.progressBar div:after {
-  content: "86%";
+  content: "87%";
 }
 
 /* line 41, ../sass/_mixins.scss */
@@ -254,7 +254,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 41, ../sass/_mixins.scss */
 .OVERALL-PROGRESS div.progressBar div {
-  width: 42.77278%;
+  width: 42.84222%;
   background: #916d7f;
 }
 /* line 46, ../sass/_mixins.scss */
@@ -320,13 +320,18 @@ section {
 }
 
 /* line 62, ../sass/screen.scss */
+section.auto-progress-tweeter {
+  height: 100em;
+}
+
+/* line 67, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0.25em 0;
   color: #eeeeee;
   font-weight: bold;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 h1, .h1 {
   font-size: 30px;
   font-size: 3rem;
@@ -335,12 +340,12 @@ h1, .h1 {
   letter-spacing: -0.07em;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 h1.site-name {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
   padding: 1em 0 0 0;
 }
-/* line 86, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 h1.site-name .char7 {
   display: inline-block;
   -webkit-transform: rotate(25deg);
@@ -351,18 +356,18 @@ h1.site-name .char7 {
   margin-left: 0.1em;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 h2 {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
   font-size: 28.8px;
   font-size: 1.8rem;
 }
-/* line 100, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 h2 .center {
   text-align: center;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 h2.tag-line {
   padding: 0 0 3em 0;
   text-align: center;
@@ -372,7 +377,7 @@ h2.tag-line {
   text-shadow: rgba(0, 0, 0, 0.8) 0.1em 0.1em 0.2em;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 h3 {
   font-size: 15px;
   font-size: 1.5rem;
@@ -380,7 +385,7 @@ h3 {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 h4 {
   font-size: 7px;
   font-size: 0.7rem;
@@ -389,12 +394,12 @@ h4 {
   letter-spacing: 0.1em;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 ul.show-list li:before {
   content: ">";
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 aside {
   position: relative;
   overflow: hidden;
@@ -402,7 +407,7 @@ aside {
   width: 90%;
   margin: 0 auto;
 }
-/* line 137, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 aside .shadow-liner {
   width: 100%;
   height: 1em;
@@ -411,7 +416,7 @@ aside .shadow-liner {
   box-shadow: #111111 0 0.25em 1em -0.25em;
   position: relative;
 }
-/* line 151, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 aside .description-shrink {
   padding: 2%;
   width: 80%;
@@ -424,16 +429,16 @@ aside .description-shrink {
   letter-spacing: 0.01em;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 162, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 aside .description-shrink p {
   padding: 0.5em 0;
 }
-/* line 166, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 aside .description-shrink a {
   color: #eeeeee;
   text-decoration: none;
 }
-/* line 181, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 aside .description-shrink, aside .pull-down-tab {
   margin: 0 auto;
   background: #494949;
@@ -447,7 +452,7 @@ aside .description-shrink, aside .pull-down-tab {
   -moz-box-shadow: #272727 0em 0.35em 0.5em;
   box-shadow: #272727 0em 0.35em 0.5em;
 }
-/* line 193, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 aside .pull-down-tab {
   width: 60%;
   margin-bottom: 2.25em;
@@ -456,22 +461,22 @@ aside .pull-down-tab {
   height: 1rem;
   cursor: pointer;
 }
-/* line 201, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 aside .pull-down-tab .drop-down-arrow {
   display: inline-block;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 section.topper {
   border-bottom: 2px dashed #6e6e6e;
   margin-bottom: 0.5em;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 section.about-this {
   padding-bottom: 3em;
 }
-/* line 217, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 section.about-this p {
   text-indent: 2em;
   color: #eeeeee;
@@ -481,17 +486,17 @@ section.about-this p {
   line-height: 1.5;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .progress ul li {
   margin-bottom: 2em;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .progress h5 {
   display: none;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .progressBar {
   width: 100%;
   height: 0.75em;
@@ -505,14 +510,14 @@ section.about-this p {
   border-radius: 25px;
 }
 
-/* line 253, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .progressBar div {
   display: block;
   float: left;
   height: 1em;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .progressBar div::after {
   display: block;
   font-family: Helvetica, Arial, sans-serif;
@@ -525,7 +530,7 @@ section.about-this p {
   font-weight: bold;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 footer {
   margin: 0 auto;
   color: #eeeeee;
@@ -533,7 +538,7 @@ footer {
   font-size: 0.8rem;
   text-align: center;
 }
-/* line 283, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 footer a {
   color: #eeeeee;
 }
