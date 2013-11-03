@@ -2,11 +2,19 @@
 
 //CAREER PROGRESS VARIABLES
 
+<<<<<<< HEAD
+=======
+$total-progress: 0%;
+$progress-count: 0;
+
+
+>>>>>>> gh-pages
 .HTMLPHPMYSQL {
 	$HTML-knowledge: 80%;
 	$PHP-knowledge: 70%;
 	$MYSQL-knowledge: 70%;
 	$overall-HTML-PHP-MYSQL-progress: ($HTML-knowledge + $PHP-knowledge + $MYSQL-knowledge) / 3;
+<<<<<<< HEAD
 	@include progressPercentage($overall-HTML-PHP-MYSQL-progress);	
 
 }
@@ -18,37 +26,82 @@
 	$jquery-knowledge: 55%;
 	$overall-js-jquery-progress: ($javascript-knowledge + $jquery-knowledge) / 2;
 	@include progressPercentage($overall-js-jquery-progress);
+=======
+	@include progressPercentage($overall-HTML-PHP-MYSQL-progress);
+	$total-progress: $total-progress + $overall-HTML-PHP-MYSQL-progress;
+	$progress-count: $progress-count + 1;
+
+}
+
+.JSJQUERY {
+	$javascript-knowledge: 75%;
+	$jquery-knowledge: 65%;
+	$overall-js-jquery-progress: ($javascript-knowledge + $jquery-knowledge) / 2;
+	@include progressPercentage($overall-js-jquery-progress);
+	$total-progress: $total-progress + $overall-js-jquery-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 .CSSLESSSASSCOMPASS {
 	$CSS-knowledge: 75%;
 	$LESS-knowledge: 50%;
+<<<<<<< HEAD
 	$SASS-knowledge: 40%;
 	$COMPASS-knowledge: 40%;
 	$overall-CSS-LESS-SASS-COMPASS-progress: ($CSS-knowledge + $LESS-knowledge + $SASS-knowledge + $COMPASS-knowledge) / 4;
 	@include progressPercentage($overall-CSS-LESS-SASS-COMPASS-progress);
+=======
+	$SASS-knowledge: 50%;
+	$COMPASS-knowledge: 50%;
+	$overall-CSS-LESS-SASS-COMPASS-progress: ($CSS-knowledge + $LESS-knowledge + $SASS-knowledge + $COMPASS-knowledge) / 4;
+	@include progressPercentage($overall-CSS-LESS-SASS-COMPASS-progress);
+	$total-progress: $total-progress + $overall-CSS-LESS-SASS-COMPASS-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 	
 	
 }
 
 .GITGITHUB {
+<<<<<<< HEAD
 	$GIT-Command-line-knowledge: 10%;
+=======
+	$GIT-Command-line-knowledge: 30%;
+>>>>>>> gh-pages
 	$GITHUB-Desktop-software-knowledge: 80%;
 	$version-control-concepts: 50%;
 	$overall-GIT-GITHUB-progress: ($GIT-Command-line-knowledge + $GITHUB-Desktop-software-knowledge + $version-control-concepts) / 3;
 	@include progressPercentage($overall-GIT-GITHUB-progress);
+<<<<<<< HEAD
+=======
+	$total-progress: $total-progress + $overall-GIT-GITHUB-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 
 .OTHERWEBTECHNOLOGIES {
+<<<<<<< HEAD
 	$NODEJS-knowledge: 10%;
 	$GRUNT-knowledge: 10%;
 	$NoSQL-Database-knowledge: 10%;
 	$RUBY-On-Rails-Knowledge: 10%;
+=======
+	$NODEJS-knowledge: 30%;
+	$GRUNT-knowledge: 30%;
+	$NoSQL-Database-knowledge: 10%;
+	$RUBY-On-Rails-Knowledge: 15%;
+>>>>>>> gh-pages
 	$Python-knowledge: 10%;
 	$APP-development-knowledge: 10%;
 	$overall-Other-Web-Technologies-progress: ($NODEJS-knowledge + $GRUNT-knowledge + $NoSQL-Database-knowledge + $RUBY-On-Rails-Knowledge + $Python-knowledge + $APP-development-knowledge) / 6;
 	@include progressPercentage($overall-Other-Web-Technologies-progress);
+<<<<<<< HEAD
+=======
+	$total-progress: $total-progress + $overall-Other-Web-Technologies-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 
 }
 //HEALTH PROGRESS VARIABLES	
@@ -59,6 +112,7 @@
 	$goal-weight: 185;
 	@import "_mfpWeight.scss";
 	$current-weight: $previous-weight - $weight-lost;
+<<<<<<< HEAD
 	$weight-progress: (($previous-weight - $current-weight) / ($previous-weight - $goal-weight)) * 100%;
 
 	@include progressPercentage($weight-progress);
@@ -74,48 +128,122 @@
 
 .PHYSIQUE {
 	@include progressPercentage(20%);
+=======
+	$overall-weight-progress: (($previous-weight - $current-weight) / ($previous-weight - $goal-weight)) * 100%;
+
+	@include progressPercentage($overall-weight-progress);
+	$total-progress: $total-progress + $overall-weight-progress;
+	$progress-count: $progress-count + 1;
+}
+
+.VISION {
+	$overall-vision-progress: 80%;
+	@include progressPercentage($overall-vision-progress);
+	$total-progress: $total-progress + $overall-vision-progress;
+	$progress-count: $progress-count + 1;
+}
+
+.DENTAL {
+	$overall-dental-progress: 50%;
+	@include progressPercentage($overall-dental-progress);
+	$total-progress: $total-progress + $overall-dental-progress;
+	$progress-count: $progress-count + 1;
+}
+
+.PHYSIQUE {
+	$overall-physique-progress: 20%;
+	@include progressPercentage($overall-physique-progress);
+	$total-progress: $total-progress + $overall-physique-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 .SIXPACKABS {
 	$number-of-abs: 6;
 	$current-number-of-visible-abs: 0;
+<<<<<<< HEAD
 	$six-pack-abs-progress: $current-number-of-visible-abs / $number-of-abs * 100%;
 	@include progressPercentage($six-pack-abs-progress);
+=======
+	$overall-six-pack-abs-progress: $current-number-of-visible-abs / $number-of-abs * 100%;
+	@include progressPercentage($overall-six-pack-abs-progress);
+	$total-progress: $total-progress + $overall-six-pack-abs-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 .PARENTING {
 	$number-of-children: 2;
 	$number-of-children-wanted: 3;
+<<<<<<< HEAD
 	$parenting-progress: $number-of-children / $number-of-children-wanted * 100%;
 	@include progressPercentage($parenting-progress);
+=======
+	$overall-parenting-progress: $number-of-children / $number-of-children-wanted * 100%;
+	@include progressPercentage($overall-parenting-progress);
+	$total-progress: $total-progress + $overall-parenting-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 .WEDDING {
 	$wedding-budget: 10000;
 	$current-amount-allocated: 3500;
+<<<<<<< HEAD
 	$wedding-progress: $current-amount-allocated / $wedding-budget * 100%;
 	@include progressPercentage($wedding-progress);
+=======
+	$overall-wedding-progress: $current-amount-allocated / $wedding-budget * 100%;
+	@include progressPercentage($overall-wedding-progress);
+	$total-progress: $total-progress + $overall-wedding-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 .HOMEOWNERSHIP {
 	$expected-downpayment: 20000;
 	$current-amount-allocated: 0;
+<<<<<<< HEAD
 	$home-ownership-progress: $current-amount-allocated / $expected-downpayment * 100%;
 	@include progressPercentage($home-ownership-progress);
+=======
+	$overall-home-ownership-progress: $current-amount-allocated / $expected-downpayment * 100%;
+	@include progressPercentage($overall-home-ownership-progress);
+	$total-progress: $total-progress + $overall-home-ownership-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 .TRANSPORTATION {
 	$number-of-g-levels: 3;
 	$current-g-level: 1;
+<<<<<<< HEAD
 	$transporation-progress: $current-g-level / $number-of-g-levels * 100%;
 	@include progressPercentage($transporation-progress);
+=======
+	$overall-transporation-progress: $current-g-level / $number-of-g-levels * 100%;
+	@include progressPercentage($overall-transporation-progress);
+	$total-progress: $total-progress + $overall-transporation-progress;
+	$progress-count: $progress-count + 1;
+>>>>>>> gh-pages
 }
 
 .LOTTERYWINNER {
 	$amount-id-like-to-win-on-the-lottery: 100000;
 	$total-amount-won-gambling: 550;
+<<<<<<< HEAD
 	$lottery-progress: $total-amount-won-gambling / $amount-id-like-to-win-on-the-lottery * 100%;
 	@include progressPercentage($lottery-progress);
+=======
+	$overall-lottery-progress: $total-amount-won-gambling / $amount-id-like-to-win-on-the-lottery * 100%;
+	@include progressPercentage($overall-lottery-progress);
+	$total-progress: $total-progress + $overall-lottery-progress;
+	$progress-count: $progress-count + 1;
+}
+
+.OVERALL-PROGRESS {
+	@include progressPercentage($total-progress / $progress-count);
+>>>>>>> gh-pages
 }
 
 

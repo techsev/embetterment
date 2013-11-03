@@ -26,6 +26,7 @@ html {
   -webkit-font-smoothing: antialiased; 
 }
 
+<<<<<<< HEAD
 a{
 	color: $white;
 	font-weight: bold;
@@ -37,12 +38,18 @@ a:hover {
 	text-decoration: underline;	
 }
 
+=======
+>>>>>>> gh-pages
 nav {
 	display:none;
 }
 
 
 section {
+<<<<<<< HEAD
+=======
+	width: 70%;
+>>>>>>> gh-pages
 	@include breakpoint(big) { width: 60%; }
   	@include breakpoint(medium) { width: 80%; }
  	@include breakpoint(small) { width: 95%; }
@@ -66,6 +73,15 @@ section {
 	.other {
 		@extend .last;
 	}
+<<<<<<< HEAD
+=======
+
+}
+
+section.auto-progress-tweeter {
+	height: 100em;
+
+>>>>>>> gh-pages
 }
 
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -102,6 +118,19 @@ h1.site-name{
 
 }
 
+<<<<<<< HEAD
+=======
+h2 {
+	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
+	@include rem-fallback('font-size', 1.8);
+
+	.center {
+		text-align: center;
+	}
+}
+
+
+>>>>>>> gh-pages
 h2.tag-line {
 	padding: 0 0 3em 0 ;
 	text-align: center;
@@ -111,6 +140,11 @@ h2.tag-line {
 	@include text-shadow(rgba(black, 0.8) 0.1em 0.1em 0.2em );
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> gh-pages
 h3 {
 	@include font-size(1.5);
 	font-weight: normal;
@@ -121,7 +155,15 @@ h4 {
 	@include font-size(0.7);
 	font-family: $sans-serif;
 	font-weight: normal;
+<<<<<<< HEAD
 	letter-spacing: 0.2em;
+=======
+	letter-spacing: 0.1em;
+}
+
+ul.show-list li:before {
+	content: ">";
+>>>>>>> gh-pages
 }
 
 //How it's made drop down
@@ -198,8 +240,30 @@ aside {
 	}
 }
 
+<<<<<<< HEAD
 
 
+=======
+section.topper {
+	border-bottom: 2px dashed darken($white, 50);
+	margin-bottom: 0.5em;
+}
+
+//About this site
+
+section.about-this {
+	padding-bottom: 3em;
+	p {
+		text-indent: 2em;
+		color: $white;
+		padding: 0.5em;
+		@include rem-fallback('font-size',0.8);
+		line-height: 1.5;
+		
+	}
+
+}
+>>>>>>> gh-pages
 
 
 
@@ -252,6 +316,19 @@ footer {
 	margin: 0 auto;
 	color: $white;
 	@include font-size(0.8);
+<<<<<<< HEAD
 	color: lighten($grey,20);
 	text-align:center;
 }
+=======
+
+	text-align:center;
+
+	a
+	{
+		color: $white; 
+	}
+}
+
+
+>>>>>>> gh-pages
