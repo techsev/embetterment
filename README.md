@@ -1,5 +1,16 @@
 #The Betterment of Seve#
 
+Version 1.1
+Date: 2013-11-03
+
+- added "What's this site about?"
+
+- Made Weight progress percentage and bar dynamicly pull data from twitter account that is updated by www.myFitnesspal.com. 
+
+- After proessing scss, have grunt plugin arse through generated css and find overall progress percentage and post value to my personal Twitter account.
+
+
+
 Version 1.0
 Date: 2013-10-22
 
