@@ -1,5 +1,10 @@
 #The Betterment of Seve#
 
+Version 1.2
+Date: 2013-11-04
+
+- added project "Responsive Words"
+
 Version 1.1
 Date: 2013-11-03
 
