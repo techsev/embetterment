@@ -468,11 +468,11 @@ section.topper {
 }
 
 /* line 220, ../sass/screen.scss */
-section.about-this {
+section.about-this, section.responsive-words {
   padding-bottom: 3em;
 }
 /* line 222, ../sass/screen.scss */
-section.about-this p {
+section.about-this p, section.responsive-words p {
   color: #eeeeee;
   padding: 0.5em;
   font-size: 12.8px;
