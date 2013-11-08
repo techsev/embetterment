@@ -154,8 +154,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 41, ../sass/_mixins.scss */
 .WEIGHT div.progressBar div {
-  width: 86.66667%;
-  background: #22dc7f;
+  width: 86.875%;
+  background: #21dd7f;
 }
 /* line 46, ../sass/_mixins.scss */
 .WEIGHT div.progressBar div:after {
@@ -254,7 +254,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 41, ../sass/_mixins.scss */
 .OVERALL-PROGRESS div.progressBar div {
-  width: 42.95333%;
+  width: 42.96722%;
   background: #916d7f;
 }
 /* line 46, ../sass/_mixins.scss */
