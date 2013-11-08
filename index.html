@@ -3,7 +3,7 @@
 	<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, user-scalable=false;">
+			<meta name="viewport" content="width=device-width, user-scalable=false">
 			<title>The Betterment of Seve</title>
 			<meta name="description" content="The chronicles of my self-improvement.">
 			<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -259,6 +259,7 @@
 		<div class="shadow-liner"></div>
 			<div class="description-shrink">
 			<h6>Dynamic Progress Bars using outside data</h6>
+			<h7>Oct 10th, 2013</h7>
 			<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
  
 <ul class="show-list">
@@ -351,28 +352,8 @@
    
    			<p>I'm considering changing the way I place the alternate text into the html. Currently I wrap the original word in a span, and also append a new span with alt word, but now that means every replaced word is in the code twice. The alternative would be to have the javascript generate CSS styles with span:after tags that in the content field contain the shortened word, but then I lose browser support for IE. For now it works.</p>
    			<p>Here's the original pen I made to test this concept</p>
-   			<div data-height="266" data-theme-id="1941" data-slug-hash="Gnlvj" data-user="techsev" data-default-tab="js" class='codepen'><pre><code>&#x2F;*
-  Responsive Words 
-  
-  This proof of concept script is just something I threw together on my lunch break at work. The idea is to abbreviate words when the screen size of the device is small. Currently just a proof of concept and should not be used on a live site.
-   
-   Should this script run on the client side? Probably not, I&#x27;ll probably end up making this into a grunt task if I ever find it to be a good idea.
-   
-   Should this concept be used in real world websites? Probably not, since any search engine crawlers coming to the site might get different version of the content (It&#x27;s rumored that google crawlers can now handle javascript and media queries)
-   
-   I&#x27;m considering changing the way I place the alternate text into the html. Currently I wrap the original word in a span, and also append a new span with alt word, but now that means every replaced word is in the code twice. The alternative would be to have the javascript generate CSS styles with span:after tags that in the content field contain the shortened word, but then I lose browser support for IE. For now it works.
-  
-  Version 0.75
-  
-  Fixed it so that punctuation gets remove from the start and end of a word sequence then re-added after a replacement is found, so no wrapping space required around punctuation.
-  
-  Future possible features: I&#x27;ve applied for the API for Abbreviations.com, If I get access, then I&#x27;ll modify my script to pull from their database instead of my small pre-made arrays.
-  
-  Version 0.5
-  
-  Initial proof of concept, punctuations require spaces before and after for words to be replaced correctly.
+   			<div data-height="266" data-theme-id="1941" data-slug-hash="Gnlvj" data-user="techsev" data-default-tab="js" class='codepen'><pre><code>
 
-*&#x2F;
 
 var sequence = {&#x27;laugh out loud&#x27;: 1, &#x27;laughing out loud&#x27;: 1, &#x27;adventure&#x27;: 2,&quot;people&quot;: 3, &quot;voice actor&quot;: 4, &quot;by the way&quot;:5,&quot;mister&quot;:6,&quot;responsive web design&quot;:7, &#x27;favorite&#x27;: 8, &#x27;different&#x27;: 9 };
 
@@ -452,6 +433,6 @@ $(&quot;.text-wrapper&quot;).html(html);
 		</section>
 			
 
-		<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="http://www.github.com/techsev/resume">Resume</a> / <a href="http://www.github.com/techsev/">GitHub</a> / <a href="http://www.linkedin.com/pub/seve-savoie-teruel/1b/149/5a7">LinkedIn</a> / <a href="http://www.codepen.io/techsev">Codepen.io</a></footer>
+		<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="http://www.github.com/techsev/resume">Resume</a> / <a href="http://www.github.com/techsev/">GitHub</a> / <a href="http://www.linkedin.com/pub/seve-savoie-teruel/1b/149/5a7">LinkedIn</a> / <a href="http://www.codepen.io/techsev">Codepen.io</a> / <a href="http://www.twitter.com/techsev">Twitter</a></footer>
 	</body>
 </html>

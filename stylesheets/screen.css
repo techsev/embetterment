@@ -300,17 +300,9 @@ section {
     width: 95%;
   }
 }
-@media (max-width: 1600px) {
-  /* line 41, ../sass/screen.scss */
-  section .column {
-    width: 31.49333%;
-  }
-}
-@media (max-width: 1250px) {
-  /* line 41, ../sass/screen.scss */
-  section .column {
-    width: 31.49333%;
-  }
+/* line 41, ../sass/screen.scss */
+section .column {
+  width: 31.49333%;
 }
 @media (max-width: 650px) {
   /* line 41, ../sass/screen.scss */
@@ -389,12 +381,22 @@ h4 {
   letter-spacing: 0.1em;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
+ul.show-list {
+  padding: 0 2.25em;
+}
+/* line 140, ../sass/screen.scss */
+ul.show-list li {
+  padding: 0 0 1em 0;
+}
+/* line 144, ../sass/screen.scss */
 ul.show-list li:before {
-  content: ">";
+  content: " \25BA";
+  position: relative;
+  margin: 0 0.3em 0 -1.3em;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 aside {
   position: relative;
   overflow: hidden;
@@ -402,7 +404,7 @@ aside {
   width: 90%;
   margin: 0 auto;
 }
-/* line 142, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 aside .shadow-liner {
   width: 100%;
   height: 1em;
@@ -411,7 +413,7 @@ aside .shadow-liner {
   box-shadow: #111111 0 0.25em 1em -0.25em;
   position: relative;
 }
-/* line 156, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 aside .description-shrink {
   padding: 2%;
   width: 80%;
@@ -424,16 +426,16 @@ aside .description-shrink {
   letter-spacing: 0.01em;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 167, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 aside .description-shrink p {
   padding: 0.5em 0;
 }
-/* line 171, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 aside .description-shrink a {
   color: #eeeeee;
   text-decoration: none;
 }
-/* line 186, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 aside .description-shrink, aside .pull-down-tab {
   margin: 0 auto;
   background: #494949;
@@ -447,7 +449,7 @@ aside .description-shrink, aside .pull-down-tab {
   -moz-box-shadow: #272727 0em 0.35em 0.5em;
   box-shadow: #272727 0em 0.35em 0.5em;
 }
-/* line 198, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 aside .pull-down-tab {
   width: 60%;
   margin-bottom: 2.25em;
@@ -456,22 +458,22 @@ aside .pull-down-tab {
   height: 1rem;
   cursor: pointer;
 }
-/* line 206, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 aside .pull-down-tab .drop-down-arrow {
   display: inline-block;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 section.topper {
   border-bottom: 2px dashed #6e6e6e;
   margin-bottom: 0.5em;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 section.about-this, section.responsive-words {
   padding-bottom: 3em;
 }
-/* line 222, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 section.about-this p, section.responsive-words p {
   color: #eeeeee;
   padding: 0.5em;
@@ -480,17 +482,17 @@ section.about-this p, section.responsive-words p {
   line-height: 1.5;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .progress ul li {
   margin-bottom: 2em;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .progress h5 {
   display: none;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .progressBar {
   width: 100%;
   height: 0.75em;
@@ -504,14 +506,14 @@ section.about-this p, section.responsive-words p {
   border-radius: 25px;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .progressBar div {
   display: block;
   float: left;
   height: 1em;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .progressBar div::after {
   display: block;
   font-family: Helvetica, Arial, sans-serif;
@@ -524,7 +526,7 @@ section.about-this p, section.responsive-words p {
   font-weight: bold;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 footer {
   margin: 0 auto;
   color: #eeeeee;
@@ -532,7 +534,7 @@ footer {
   font-size: 0.8rem;
   text-align: center;
 }
-/* line 288, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 footer a {
   color: #eeeeee;
 }

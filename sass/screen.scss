@@ -39,9 +39,9 @@ section {
  	margin: 0 auto;
 
 	.column {
-
-		@include breakpoint(big) { @include grid_column(4); }
-  		@include breakpoint(medium) { @include grid_column(4); }
+		@include grid_column(4);
+		//@include breakpoint(big) { @include grid_column(4); }
+  		//@include breakpoint(medium) { @include grid_column(4); }
  		@include breakpoint(small) { @include grid_column(12); }
 	}
 
@@ -132,9 +132,24 @@ h4 {
 	letter-spacing: 0.1em;
 }
 
-ul.show-list li:before {
-	content: ">";
+
+ul.show-list {
+
+	padding: 0 2.25em;
+
+	li {
+		padding: 0 0 1em 0;
+	}
+
+	li:before {
+		content: " \25BA";
+		position: relative;
+		margin: 0 0.3em 0 -1.3em;
+
+
+	}
 }
+
 
 //How it's made drop down
 aside { 

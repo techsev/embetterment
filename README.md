@@ -12,7 +12,7 @@ Date: 2013-11-03
 
 - Made Weight progress percentage and bar dynamicly pull data from twitter account that is updated by www.myFitnesspal.com. 
 
-- After proessing scss, have grunt plugin parse through generated css and find overall progress percentage and post value to my personal Twitter account.
+- After processing scss, have grunt plugin parse through generated css and find overall progress percentage and post value to my personal Twitter account.
 
 To do next: static html blog using grunt.
 
