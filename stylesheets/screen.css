@@ -311,14 +311,23 @@ section .column {
   }
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
+section.project h3 {
+  cursor: pointer;
+}
+/* line 68, ../sass/screen.scss */
+section.project .project-wrapper {
+  display: none;
+}
+
+/* line 73, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0.25em 0;
   color: #eeeeee;
   font-weight: bold;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 h1, .h1 {
   font-size: 30px;
   font-size: 3rem;
@@ -327,12 +336,12 @@ h1, .h1 {
   letter-spacing: -0.07em;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 h1.site-name {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
   padding: 1em 0 0 0;
 }
-/* line 91, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 h1.site-name .char7 {
   display: inline-block;
   -webkit-transform: rotate(25deg);
@@ -343,18 +352,18 @@ h1.site-name .char7 {
   margin-left: 0.1em;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 h2 {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
   font-size: 28.8px;
   font-size: 1.8rem;
 }
-/* line 105, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 h2 .center {
   text-align: center;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 h2.tag-line {
   padding: 0 0 3em 0;
   text-align: center;
@@ -364,7 +373,7 @@ h2.tag-line {
   text-shadow: rgba(0, 0, 0, 0.8) 0.1em 0.1em 0.2em;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 h3 {
   font-size: 15px;
   font-size: 1.5rem;
@@ -372,7 +381,7 @@ h3 {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 h4 {
   font-size: 7px;
   font-size: 0.7rem;
@@ -381,22 +390,22 @@ h4 {
   letter-spacing: 0.1em;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 ul.show-list {
-  padding: 0 1.75em;
+  padding: 0 2.25em;
 }
-/* line 140, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 ul.show-list li {
   padding: 0 0 1em 0;
 }
-/* line 144, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 ul.show-list li:before {
   content: " \25BA";
   position: relative;
   margin: 0 0.3em 0 -1.3em;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 aside {
   position: relative;
   overflow: hidden;
@@ -404,7 +413,7 @@ aside {
   width: 90%;
   margin: 0 auto;
 }
-/* line 157, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 aside .shadow-liner {
   width: 100%;
   height: 1em;
@@ -413,7 +422,7 @@ aside .shadow-liner {
   box-shadow: #111111 0 0.25em 1em -0.25em;
   position: relative;
 }
-/* line 171, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 aside .description-shrink {
   padding: 2%;
   width: 80%;
@@ -426,16 +435,16 @@ aside .description-shrink {
   letter-spacing: 0.01em;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 182, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 aside .description-shrink p {
   padding: 0.5em 0;
 }
-/* line 186, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 aside .description-shrink a {
   color: #eeeeee;
   text-decoration: none;
 }
-/* line 201, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 aside .description-shrink, aside .pull-down-tab {
   margin: 0 auto;
   background: #494949;
@@ -449,7 +458,7 @@ aside .description-shrink, aside .pull-down-tab {
   -moz-box-shadow: #272727 0em 0.35em 0.5em;
   box-shadow: #272727 0em 0.35em 0.5em;
 }
-/* line 213, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 aside .pull-down-tab {
   width: 60%;
   margin-bottom: 2.25em;
@@ -458,22 +467,22 @@ aside .pull-down-tab {
   height: 1rem;
   cursor: pointer;
 }
-/* line 221, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 aside .pull-down-tab .drop-down-arrow {
   display: inline-block;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 section.topper {
   border-bottom: 2px dashed #6e6e6e;
   margin-bottom: 0.5em;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 section.about-this, section.responsive-words {
   padding-bottom: 3em;
 }
-/* line 237, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 section.about-this p, section.responsive-words p {
   color: #eeeeee;
   padding: 0.5em;
@@ -482,17 +491,17 @@ section.about-this p, section.responsive-words p {
   line-height: 1.5;
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .progress ul li {
   margin-bottom: 2em;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .progress h5 {
   display: none;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .progressBar {
   width: 100%;
   height: 0.75em;
@@ -506,14 +515,14 @@ section.about-this p, section.responsive-words p {
   border-radius: 25px;
 }
 
-/* line 273, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .progressBar div {
   display: block;
   float: left;
   height: 1em;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .progressBar div::after {
   display: block;
   font-family: Helvetica, Arial, sans-serif;
@@ -526,7 +535,7 @@ section.about-this p, section.responsive-words p {
   font-weight: bold;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 footer {
   margin: 0 auto;
   color: #eeeeee;
@@ -534,7 +543,7 @@ footer {
   font-size: 0.8rem;
   text-align: center;
 }
-/* line 303, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 footer a {
   color: #eeeeee;
 }

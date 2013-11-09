@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, user-scalable=false">
-			<title>The Betterment of Seve</title>
-			<meta name="description" content="The chronicles of my self-improvement.">
-			<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-			<link rel="stylesheet" href="stylesheets/print.css" media="print" type="text/css">
-			<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=false">
+	<title>The Betterment of Seve</title>
+	<meta name="description" content="The chronicles of my self-improvement.">
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="stylesheets/print.css" media="print" type="text/css">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			  ga('create', 'UA-45520013-1', 'techsev.github.io');
-			  ga('send', 'pageview');
+		ga('create', 'UA-45520013-1', 'techsev.github.io');
+		ga('send', 'pageview');
 
-			</script>
+	</script>
 			<!--[if lt IE 8]>
 			<link rel="stylesheet" href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css">
 			<![endif]-->
@@ -27,342 +27,358 @@
 			<script src="js/jquery.responsive.words.js"></script>
 			<script type="text/javascript">
 
-			function rotate(object, degrees) {
-			    object.css({
-			  '-webkit-transform' : 'rotate('+degrees+'deg)',
-			     '-moz-transform' : 'rotate('+degrees+'deg)',  
-			      '-ms-transform' : 'rotate('+degrees+'deg)',  
-			       '-o-transform' : 'rotate('+degrees+'deg)',  
-			          'transform' : 'rotate('+degrees+'deg)',  
-			               'zoom' : 1
+				function rotate(object, degrees) {
+					object.css({
+						'-webkit-transform' : 'rotate('+degrees+'deg)',
+						'-moz-transform' : 'rotate('+degrees+'deg)',  
+						'-ms-transform' : 'rotate('+degrees+'deg)',  
+						'-o-transform' : 'rotate('+degrees+'deg)',  
+						'transform' : 'rotate('+degrees+'deg)',  
+						'zoom' : 1
 
-		    });
-}
-
-			$( document ).ready(function() {
-    			$(".site-name").lettering();
-				$(".site-name").fitText(1.5,{minFontSize: '30px'});
-				$(".tag-line").fitText(3.5,{minFontSize: '12px'});
-
-				$(".pull-down-tab").click(function(){
-
-					
-					if($(this).siblings('.description-shrink').css('display') == 'block')
-					{
-						rotate($(this).find('.drop-down-arrow'), 0);
-
-					} else {
-						rotate($(this).find('.drop-down-arrow'), 180);
-					}
-
-
-					
-					$(this).siblings('.description-shrink').slideToggle("slow",function(){
-						rotate($(this).find('.drop-down-arrow'), 180);
 					});
-					
+				}
+
+				$( document ).ready(function() {
+					$(".site-name").lettering();
+					$(".site-name").fitText(1.5,{minFontSize: '30px'});
+					$(".tag-line").fitText(3.5,{minFontSize: '12px'});
+
+					$(".pull-down-tab").click(function(){
+
+
+						if($(this).siblings('.description-shrink').css('display') == 'block')
+						{
+							rotate($(this).find('.drop-down-arrow'), 0);
+
+						} else {
+							rotate($(this).find('.drop-down-arrow'), 180);
+						}
+
+
+
+						$(this).siblings('.description-shrink').slideToggle("slow",function(){
+							rotate($(this).find('.drop-down-arrow'), 180);
+						});
+
+
+					});
+
+					$(".project H3").click(function(){
+						$(this).siblings('.project-wrapper').slideToggle("slow",function(){
+						rotate($(this).find('.span'), 180);
+					});
+					});
+
+					responsiveWords('.text-wrapper');
+
 
 				});
 
-				responsiveWords('.text-wrapper');
-
-
-			});
-			
 			</script>
 
-	</head>
-	<body>
-		<header>
-		<div class='title-wrapper'>
-			<h1 class="site-name">The Betterment of Seve</h1>
-			<h2 class="tag-line">The chronicles of my self-improvement.</h2>
+		</head>
+		<body>
+			<header>
+				<div class='title-wrapper'>
+					<h1 class="site-name">The Betterment of Seve</h1>
+					<h2 class="tag-line">The chronicles of my self-improvement.</h2>
 
-		</div>
-		<nav><ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Progress</a></li>
-			<li><a href="">Knowledge</a></li>
-			<li><a href="">Health</a></li>
-		</ul></nav>
-		</header>
-		<section class="about-this">
-			<h2>What's this site about?</h2>
-			<p>Glad you asked. My name is Seve Teruel, I’m an up and coming Web developer working just outside of Toronto and living even further outside of Toronto. I've spent the last year working for a publishing company that mainly deals with selling financial and health publications through email campaigns. I've started this site as a way to show case my progress as both a web developer as well as a human being.</p>
-			<p>I’ve been listening to lots of different web development podcasts as of late, so that I can know what I don’t know, and learn it. Stuff like CSS preprocessors, NODE.js, Responsive images. e.t.c. I’ve been dying to try out these new tech trends on projects at work, however, there usually isn't enough time to implement them. So instead I decided to build this website as a sandbox to try out ideas as well as a showcase of the skills I do have.</p>
-		</section>
-		<section class="goals topper"><h2 class="center">Life Goals Progress</h2></section>
-		<section class="progress">
-		
-		<div class="column knowledge first">
-		<h3>Knowledge</h3>
-		<ul>
-			<li class="HTMLPHPMYSQL">
-				<h4>HTML / PHP / MYSQL</h4>
-				<div class="progressBar"><div></div></div>
-				<h5>View Percentage Breakdown</h5>
-				<p></p>
-			</li>
-			<li class="JSJQUERY">
-				<h4>Javascript / Jquery</h4>
-				<div class="progressBar"><div></div></div>
-				<h5>View Percentage Breakdown</h5>
-				<p></p>
-			</li>
-			<li class="CSSLESSSASSCOMPASS">
-				<h4>CSS Preprocessors</h4>
-				<div class="progressBar"><div></div></div>
-				<h5>View Percentage Breakdown</h5>
-				<p></p>
-			</li>
-			<li class="GITGITHUB">
-				<h4>Version Control</h4>
-				<div class="progressBar"><div></div></div>
-				<h5>View Percentage Breakdown</h5>
-				<p></p>
-			</li>
-			<li class="OTHERWEBTECHNOLOGIES">
-				<h4>Other Web Trends</h4>
-				<div class="progressBar"><div></div></div>
-				<h5>View Percentage Breakdown</h5>
-				<p></p>
-			</li>
-		</ul>
-		</div>
-		<div class="column health">
-			<h3>Health</h3>
-			<ul>
-				<li class="WEIGHT">
-					<h4>Weight</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
+				</div>
+				<nav><ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Progress</a></li>
+					<li><a href="">Knowledge</a></li>
+					<li><a href="">Health</a></li>
+				</ul></nav>
+			</header>
+			<section class="about-this">
+				<h2>What's this site about?</h2>
+				<p>Glad you asked. My name is Seve Teruel, I’m an up and coming Web developer working just outside of Toronto and living even further outside of Toronto. I've spent the last year working for a publishing company that mainly deals with selling financial and health publications through email campaigns. I've started this site as a way to show case my progress as both a web developer as well as a human being.</p>
+				<p>I’ve been listening to lots of different web development podcasts as of late, so that I can know what I don’t know, and learn it. Stuff like CSS preprocessors, NODE.js, Responsive images. e.t.c. I’ve been dying to try out these new tech trends on projects at work, however, there usually isn't enough time to implement them. So instead I decided to build this website as a sandbox to try out ideas as well as a showcase of the skills I do have.</p>
+			</section>
+			<section class="goals topper"><h2 class="center">Life Goals Progress</h2></section>
+			<section class="progress">
 
-				</li>
-				<li class="VISION">
-					<h4>Vision</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-				<li class="DENTAL">
-					<h4>Dental</h4>
-					
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-				<li class="PHYSIQUE">
-					<h4>Physique</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
+				<div class="column knowledge first">
+					<h3>Knowledge</h3>
+					<ul>
+						<li class="HTMLPHPMYSQL">
+							<h4>HTML / PHP / MYSQL</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="JSJQUERY">
+							<h4>Javascript / Jquery</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="CSSLESSSASSCOMPASS">
+							<h4>CSS Preprocessors</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="GITGITHUB">
+							<h4>Version Control</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="OTHERWEBTECHNOLOGIES">
+							<h4>Other Web Trends</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+					</ul>
+				</div>
+				<div class="column health">
+					<h3>Health</h3>
+					<ul>
+						<li class="WEIGHT">
+							<h4>Weight</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
 
-				</li>
-				<li class="SIXPACKABS">
-					<h4>Six Pack Abs</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-			</ul>
-		</div>
-		<div class="column other last">
+						</li>
+						<li class="VISION">
+							<h4>Vision</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="DENTAL">
+							<h4>Dental</h4>
 
-			<h3>Other</h3>
-			<ul>
-				<li class="PARENTING">
-					<h4>Parenting</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-				<li class="WEDDING">
-					<h4>Wedding</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-				<li class="HOMEOWNERSHIP">
-					<h4>Home Ownership</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-				<li class="TRANSPORTATION">
-					<h4>Transportation</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-				<li class="LOTTERYWINNER">
-					<h4>Lottery Winner</h4>
-					<div class="progressBar"><div></div></div>
-					<h5>View Percentage Breakdown</h5>
-				<p></p>
-				</li>
-			</ul>
-		</div>
-		<h3>Overall Betterment Progress</h3>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="PHYSIQUE">
+							<h4>Physique</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+
+						</li>
+						<li class="SIXPACKABS">
+							<h4>Six Pack Abs</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+					</ul>
+				</div>
+				<div class="column other last">
+
+					<h3>Other</h3>
+					<ul>
+						<li class="PARENTING">
+							<h4>Parenting</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="WEDDING">
+							<h4>Wedding</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="HOMEOWNERSHIP">
+							<h4>Home Ownership</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="TRANSPORTATION">
+							<h4>Transportation</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+						<li class="LOTTERYWINNER">
+							<h4>Lottery Winner</h4>
+							<div class="progressBar"><div></div></div>
+							<h5>View Percentage Breakdown</h5>
+							<p></p>
+						</li>
+					</ul>
+				</div>
+				<h3>Overall Betterment Progress</h3>
 				<ul><li class="OVERALL-PROGRESS">
 					<div class="progressBar"><div></div></div>
 				</li></ul>
 				<p></p>
-		<aside class="method-description ">
-		<div class="shadow-liner"></div>
-			<div class="description-shrink">
-			<h6>Dynamic, Varible driven Progress Bars</h6>
-			<div data-height="268" data-theme-id="0" data-slug-hash="nlszq" data-user="techsev" data-default-tab="html" class='codepen'><pre><code>&lt;li class=&quot;WEIGHT&quot;&gt;
-	&lt;h4&gt;Weight&lt;&#x2F;h4&gt;
-	&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
-&lt;&#x2F;li&gt;
-
-&lt;li class=&quot;SIXPACKABS&quot;&gt;
-	&lt;h4&gt;Six Pack Abs&lt;&#x2F;h4&gt;
-	&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
-&lt;&#x2F;li&gt;
-
-&lt;li class=&quot;CSSLESSSASSCOMPASS&quot;&gt;
-	&lt;h4&gt;CSS Preprocessor Knowledge&lt;&#x2F;h4&gt;
-	&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
-&lt;&#x2F;li&gt;</code></pre>
-<p>See the Pen <a href='http://codepen.io/techsev/pen/nlszq'>%= penName %></a> by Seve Teruel (<a href='http://codepen.io/techsev'>@techsev</a>) on <a href='http://codepen.io'>CodePen</a></p>
-</div><script async src="http://codepen.io/assets/embed/ei.js"></script>
-<p>What I wanted to do was have a way to quickly and dynamicly have progress bars tracking my skills and goals that could easily be modified by changing 1 - 2 variables. I considered making it database driven or using PHP however, my goal for this site is to try techniques i’ve never used before, including making an entire static website. </p>
-
-<p>So instead I decided to use SASS and Compass. That way I can make changes fairly quickly on, compile the CSS and then push to git pages.  </p>
-
-<p>Where the CSS differs for each progress bar is the width, color and the percentage amount.</p>
-
-<p>I created a SASS mixin that when given a percentage, would set it as the inner-div’s width, the “content” field of the div:after class as well as modify the background color of the inner div between the colors red and green. </p>
-
-<p>Then all I have to do was supply the required percentage for each bar, which in some cases I just supplied directly or in others, I used SASS variables and math to generate the percentage. I had a little fun with my <a href="https://github.com/techsev/embetterment/blob/master/sass/_progress.scss">SASS Progress Bar Variables</a></p>
-			<div class="clearfix"></div>
-			</div>
-			<div class="pull-down-tab">
-			<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div>
-			
-		</aside>
-		</section>
-
-		<section class="projects topper">
-			<h2>Projects & Works</h2>
-		</section>
-		<section class="dynamic-progress-bar">
-			<h3>Weight Loss Progress Bar (Dynamicly Updated)</h3>
-				<ul><li class="WEIGHT">
-					<div class="progressBar"><div></div></div>
-				</li></ul>
-				<p></p>
 				<aside class="method-description ">
-		<div class="shadow-liner"></div>
-			<div class="description-shrink">
-			<h6>Dynamic Progress Bars using outside data</h6>
-			<h7>Oct 10th, 2013</h7>
-			<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
- 
-<ul class="show-list">
-<li>I want to be able to just change a variable at any time manually.</li>
-<li>I want to be able to add an project entry to my site that will increase my progress by adding the original value plus my gained “experience”, like a role playing game.</li>
-<li>I want to be able have certain progress bars be updated by referencing certain APIs and other resources.</li>
-</ul>
+					<div class="shadow-liner"></div>
+					<div class="description-shrink">
+						<h6>Dynamic, Varible driven Progress Bars</h6>
+						<div data-height="268" data-theme-id="0" data-slug-hash="nlszq" data-user="techsev" data-default-tab="html" class='codepen'><pre><code>&lt;li class=&quot;WEIGHT&quot;&gt;
+							&lt;h4&gt;Weight&lt;&#x2F;h4&gt;
+							&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+							&lt;&#x2F;li&gt;
 
-<p>Option 1 was doable but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
+							&lt;li class=&quot;SIXPACKABS&quot;&gt;
+							&lt;h4&gt;Six Pack Abs&lt;&#x2F;h4&gt;
+							&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+							&lt;&#x2F;li&gt;
 
-<p>Option 2 will be trickier, since I’m not planning to have the site use any back end database. I will get to this one later.</p>
+							&lt;li class=&quot;CSSLESSSASSCOMPASS&quot;&gt;
+							&lt;h4&gt;CSS Preprocessor Knowledge&lt;&#x2F;h4&gt;
+							&lt;div class=&quot;progressBar&quot;&gt;&lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+							&lt;&#x2F;li&gt;</code></pre>
+							<p>See the Pen <a href='http://codepen.io/techsev/pen/nlszq'>%= penName %></a> by Seve Teruel (<a href='http://codepen.io/techsev'>@techsev</a>) on <a href='http://codepen.io'>CodePen</a></p>
+						</div><script async src="http://codepen.io/assets/embed/ei.js"></script>
+						<p>What I wanted to do was have a way to quickly and dynamicly have progress bars tracking my skills and goals that could easily be modified by changing 1 - 2 variables. I considered making it database driven or using PHP however, my goal for this site is to try techniques i’ve never used before, including making an entire static website. </p>
 
-<p>So I’ve decided to work on option 3 for now. I’m going to use node.js and grunt to pull data from twitter to update my weight progress.</p>
+						<p>So instead I decided to use SASS and Compass. That way I can make changes fairly quickly on, compile the CSS and then push to git pages.  </p>
 
-<p>Ideally I wanted to have grunt pull the data from the web service “My Fitness Pal” since I currently use it to track my weight progress, however, their API tools are currently private. However, they do allow for automatic posting to twitter, so I created a twitter account, “SeveIsFat” that was exclusively for this purpose. From there I created a node.js script that pulls the most recent tweet on my account, strips the everything but the amount of weight I’ve lost since I started tracking, and updates a file that holds exclusively that variable which then gets include imported into my <code>_progress.scss</code> file, which is where all my current progress goal variables are saved.</p>
+						<p>Where the CSS differs for each progress bar is the width, color and the percentage amount.</p>
 
-<p>Once / If I get the My fitness Pal API keys I’ll update this to allow for a direct link to the data, but for now it’s the best I could think of.</p><div class="clearfix"></div>
-			</div>
-			<div class="pull-down-tab">
-			<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
-		</section> 
-		<section class="auto-progress-tweeter">
-		<h3>Automatic Twitter Updates</h3>
-		<p style="text-align: center;"><a class="twitter-timeline" height="200" data-dnt="true" href="https://twitter.com/search?q=%23TheBettermentOfSeve" data-widget-id="396333849862356992">Tweets about "#TheBettermentOfSeve"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+						<p>I created a SASS mixin that when given a percentage, would set it as the inner-div’s width, the “content” field of the div:after class as well as modify the background color of the inner div between the colors red and green. </p>
+
+						<p>Then all I have to do was supply the required percentage for each bar, which in some cases I just supplied directly or in others, I used SASS variables and math to generate the percentage. I had a little fun with my <a href="https://github.com/techsev/embetterment/blob/master/sass/_progress.scss">SASS Progress Bar Variables</a></p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="pull-down-tab">
+						<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div>
+
+					</aside>
+				</section>
+
+				<section class="projects topper">
+					<h2>Projects & Works</h2>
+				</section>
+				<section class="project dynamic-progress-bar">
+				<h3><span>&#9660;</span> Live Data Progress Bar // 10/10/13</h3>
+					<div class="project-wrapper">
+						<ul><li class="WEIGHT">
+							<div class="progressBar"><div></div></div>
+						</li></ul>
+						<p></p>
+						<aside class="method-description ">
+							<div class="shadow-liner"></div>
+							<div class="description-shrink">
+								<h6>Dynamic Progress Bars using live data</h6>
+								<h7>Oct 10th, 2013</h7>
+								<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
+
+								<ul class="show-list">
+									<li>I want to be able to just change a variable at any time manually.</li>
+									<li>I want to be able to add an project entry to my site that will increase my progress by adding the original value plus my gained “experience”, like a role playing game.</li>
+									<li>I want to be able have certain progress bars be updated by referencing certain APIs and other resources.</li>
+								</ul>
+
+								<p>Option 1 was doable but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
+
+								<p>Option 2 will be trickier, since I’m not planning to have the site use any back end database. I will get to this one later.</p>
+
+								<p>So I’ve decided to work on option 3 for now. I’m going to use node.js and grunt to pull data from twitter to update my weight progress.</p>
+
+								<p>Ideally I wanted to have grunt pull the data from the web service “My Fitness Pal” since I currently use it to track my weight progress, however, their API tools are currently private. However, they do allow for automatic posting to twitter, so I created a twitter account, “SeveIsFat” that was exclusively for this purpose. From there I created a node.js script that pulls the most recent tweet on my account, strips the everything but the amount of weight I’ve lost since I started tracking, and updates a file that holds exclusively that variable which then gets include imported into my <code>_progress.scss</code> file, which is where all my current progress goal variables are saved.</p>
+
+								<p>Once / If I get the My fitness Pal API keys I’ll update this to allow for a direct link to the data, but for now it’s the best I could think of.</p>
+								<div class="clearfix"></div>
+							</div>
+							<div class="pull-down-tab">
+								<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
+							</div>
+						</section> 
+						<section class="project auto-progress-tweeter">
+							<h3><span>&#9660;</span> Automatic Twitter Updates // 11/03/13</h3>
+							<div class="project-wrapper">
+								<p style="text-align: center;"><a class="twitter-timeline" height="200" data-dnt="true" href="https://twitter.com/search?q=%23TheBettermentOfSeve" data-widget-id="396333849862356992">Tweets about "#TheBettermentOfSeve"</a>
+									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
 
 
 
-		<aside class="method-description">
-		<div class="shadow-liner"></div>
-			<div class="description-shrink">
-			<h6>Auto-post progress progression to Main Twitter</h6>
-			<p>Using a lot of what I learned on how to pull in data from twitter, I created a grunt task that posts my overall progress to my primary account. </p>
+									<aside class="method-description">
+										<div class="shadow-liner"></div>
+										<div class="description-shrink">
+											<h6>Auto-post progress progression to Main Twitter</h6>
+											<p>Using a lot of what I learned on how to pull in data from twitter, I created a grunt task that posts my overall progress to my primary account. </p>
 
-			<p>First, I found a grunt plugin that reads in a CSS files and turns it into a json file that I imported into my grunt script. From there I found the overall percentage of my progress and used the same twitter api grunt plugin to post a quick update to my primary twitter account.</p>
-			<div class="clearfix"></div>
-			</div>
-			<div class="pull-down-tab">
-			<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
-		</section>
+											<p>First, I found a grunt plugin that reads in a CSS files and turns it into a json file that I imported into my grunt script. From there I found the overall percentage of my progress and used the same twitter api grunt plugin to post a quick update to my primary twitter account.</p>
+											<div class="clearfix"></div>
+										</div>
+										<div class="pull-down-tab">
+											<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
+										</div>
+									</section>
 
-		<section class="responsive-words">
-		<style type="text/css">
+									<section class="project responsive-words">
+										<style type="text/css">
 		/*
 			CSS for Responsive Words
 
-		*/
-		.papabear {
-			display: inline;
-			background-color: green;
-		}
-
-		.babybear {
-			display:none;
-			background-color: red;
-		}
-
-
-		@media (max-width: 600px) {
+			*/
 			.papabear {
-				display: none;
-		  	}
+				display: inline;
+				background-color: green;
+			}
 
-		  	.babybear {
-		    	display:inline;
-		  	}
-		}
+			.babybear {
+				display:none;
+				background-color: red;
+			}
+
+
+			@media (max-width: 600px) {
+				.papabear {
+					display: none;
+				}
+
+				.babybear {
+					display:inline;
+				}
+			}
 
 		</style>
-		<div class='text-wrapper'>
-			  <h3>CSS Responsive Words</h3>
-			  <p> This is a test of a different way to handle Responsive Web Design using Javascript and Cascading Style Sheets. My idea is to make the overall text smaller based on media queries.</p>
-			  
-			  <p>The words highlighted in green are the full length words, if the words are highlighted in red, then you're seeing the shortend words.</p>
-			  
-			  <p>By the way, have you ever seen the show "Adventure Time?" it's my favorite. Every time I watch it, I end up laughing out loud. I think I enjoy it so much because my favorite voice actor, mister John Dimagio, is the voice of Jake the dog. </p>  
-		</div>
+		<h3><span>&#9660;</span> CSS Responsive Words // 11/04/13</h3>
+		<div class="project-wrapper">
+			<div class='text-wrapper'>
 
+				<p> This is a test of a different way to handle Responsive Web Design using Javascript and Cascading Style Sheets. My idea is to make the overall text smaller based on media queries.</p>
 
+				<p>The words highlighted in green are the full length words, if the words are highlighted in red, then you're seeing the shortend words.</p>
 
-		<aside class="method-description">
-		<div class="shadow-liner"></div>
-			<div class="description-shrink">
-			<h6>CSS Responsive Words</h6>
-			<p>This proof of concept script is just something I threw together on my lunch break at work. The idea is to abbreviate words when the screen size of the device is small. Currently just a proof of concept and should not be used on a live site.</p>
-   
-   			<p>Should this script run on the client side? Probably not, I'll probably end up making this into a grunt task if I ever find it to be a good idea.</p>
-   
-   			<p>Should this concept be used in real world websites? Probably not, since any search engine crawlers coming to the site might get different version of the content (It's rumored that google crawlers can now handle javascript and media queries)</p>
-   
-   			<p>I'm considering changing the way I place the alternate text into the html. Currently I wrap the original word in a span, and also append a new span with alt word, but now that means every replaced word is in the code twice. The alternative would be to have the javascript generate CSS styles with span:after tags that in the content field contain the shortened word, but then I lose browser support for IE. For now it works.</p>
-   			<p>Here's the original pen I made to test this concept. <p data-height="266" data-theme-id="1941" data-slug-hash="Gnlvj" data-user="techsev" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/techsev/pen/Gnlvj'>Responsive Words</a> by Seve Teruel (<a href='http://codepen.io/techsev'>@techsev</a>) on <a href='http://codepen.io'>CodePen</a></p>
- <script async src="//codepen.io/assets/embed/ei.js"></script></p>
-
-   			
-</div>
-			<div class="clearfix"></div>
+				<p>By the way, have you ever seen the show "Adventure Time?" it's my favorite. Every time I watch it, I end up laughing out loud. I think I enjoy it so much because my favorite voice actor, mister John Dimagio, is the voice of Jake the dog. </p>  
 			</div>
-			<div class="pull-down-tab">
-			<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
-		</section>
+
+
+
+			<aside class="method-description">
+				<div class="shadow-liner"></div>
+				<div class="description-shrink">
+					<h6>CSS Responsive Words</h6>
+					<p>This proof of concept script is just something I threw together on my lunch break at work. The idea is to abbreviate words when the screen size of the device is small. Currently just a proof of concept and should not be used on a live site.</p>
+
+					<p>Should this script run on the client side? Probably not, I'll probably end up making this into a grunt task if I ever find it to be a good idea.</p>
+
+					<p>Should this concept be used in real world websites? Probably not, since any search engine crawlers coming to the site might get different version of the content (It's rumored that google crawlers can now handle javascript and media queries)</p>
+
+					<p>I'm considering changing the way I place the alternate text into the html. Currently I wrap the original word in a span, and also append a new span with alt word, but now that means every replaced word is in the code twice. The alternative would be to have the javascript generate CSS styles with span:after tags that in the content field contain the shortened word, but then I lose browser support for IE. For now it works.</p>
+					<p>Here's the original pen I made to test this concept. <p data-height="266" data-theme-id="1941" data-slug-hash="Gnlvj" data-user="techsev" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/techsev/pen/Gnlvj'>Responsive Words</a> by Seve Teruel (<a href='http://codepen.io/techsev'>@techsev</a>) on <a href='http://codepen.io'>CodePen</a></p>
+					<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+					<div class="clearfix"></div>
+				</div>
+				<div class="pull-down-tab">
+					<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
+				</div>
+			</section>
 			
 
-		<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="http://www.github.com/techsev/resume">Resume</a> / <a href="http://www.github.com/techsev/">GitHub</a> / <a href="http://www.linkedin.com/pub/seve-savoie-teruel/1b/149/5a7">LinkedIn</a> / <a href="http://www.codepen.io/techsev">Codepen.io</a> / <a href="http://www.twitter.com/techsev">Twitter</a></footer>
-	</body>
-</html>
+			<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="http://www.github.com/techsev/resume">Resume</a> / <a href="http://www.github.com/techsev/">GitHub</a> / <a href="http://www.linkedin.com/pub/seve-savoie-teruel/1b/149/5a7">LinkedIn</a> / <a href="http://www.codepen.io/techsev">Codepen.io</a> / <a href="http://www.twitter.com/techsev">Twitter</a></footer>
+		</body>
+		</html>

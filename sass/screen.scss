@@ -6,13 +6,13 @@
 
 
 
-@import "compass/reset";
-@import "compass/css3";
-@import "compass/utilities/general/clearfix";
-@import "_grid.scss";
-@import "_mixins.scss";
-@import "_base.scss";
-@import "_progress.scss";
+ @import "compass/reset";
+ @import "compass/css3";
+ @import "compass/utilities/general/clearfix";
+ @import "_grid.scss";
+ @import "_mixins.scss";
+ @import "_base.scss";
+ @import "_progress.scss";
 
 
 // Style
@@ -21,11 +21,11 @@ html {
 	background: $grey;
 	font-size: 100%;
 	font-family: $serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased; 
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased; 
 }
- 
+
 nav {
 	display:none;
 }
@@ -34,121 +34,127 @@ nav {
 section {
 	width: 70%;
 	@include breakpoint(big) { width: 60%; }
-  	@include breakpoint(medium) { width: 80%; }
- 	@include breakpoint(small) { width: 95%; }
- 	margin: 0 auto;
+	@include breakpoint(medium) { width: 80%; }
+	@include breakpoint(small) { width: 95%; }
+	margin: 0 auto;
 
 	.column {
 		@include grid_column(4);
 		//@include breakpoint(big) { @include grid_column(4); }
   		//@include breakpoint(medium) { @include grid_column(4); }
- 		@include breakpoint(small) { @include grid_column(12); }
+  		@include breakpoint(small) { @include grid_column(12); }
+  	}
+
+  	.knowledge {
+  		@extend .first;
+  	}
+
+  	.health {
+
+  	}
+
+  	.other {
+  		@extend .last;
+  	}
+
+  }
+
+section.project {
+
+	h3 {
+		cursor: pointer;
 	}
 
-	.knowledge {
-		@extend .first;
-	}
-
-	.health {
-		
-	}
-
-	.other {
-		@extend .last;
-	}
-
-}
-
-section.auto-progress-tweeter {
-	
-
-}
-
-h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	padding: 0.25em 0;
-	
-	color: $white;
-	font-weight: bold;
-}
-
-h1, .h1 {
-	@include font-size(3);
-	text-align: center;
-	font-family: $serif;
-	letter-spacing: -0.07em;
-}
-
-h1.site-name{
-
-	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
-
-	padding: 1em 0 0 0;
-
-	span {
-		
-	}
-
-	.char7 {
-		display: inline-block;
-		@include rotate(25deg);
-		margin-left: 0.1em;
-
-	}
-
-
-}
-
-h2 {
-	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
-	@include rem-fallback('font-size', 1.8);
-
-	.center {
-		text-align: center;
+	.project-wrapper {
+		display: none;
 	}
 }
 
+  h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  	padding: 0.25em 0;
 
-h2.tag-line {
-	padding: 0 0 3em 0 ;
-	text-align: center;
-	font-weight:normal;
-	font-family: $sans-serif;
-	text-transform: uppercase;
-	@include text-shadow(rgba(black, 0.8) 0.1em 0.1em 0.2em );
-}
+  	color: $white;
+  	font-weight: bold;
+  }
 
+  h1, .h1 {
+  	@include font-size(3);
+  	text-align: center;
+  	font-family: $serif;
+  	letter-spacing: -0.07em;
+  }
 
+  h1.site-name{
 
-h3 {
-	@include font-size(1.5);
-	font-weight: normal;
-	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
-}
+  	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
 
-h4 {
-	@include font-size(0.7);
-	font-family: $sans-serif;
-	font-weight: normal;
-	letter-spacing: 0.1em;
-}
+  	padding: 1em 0 0 0;
 
+  	span {
 
-ul.show-list {
+  	}
 
-	padding: 0 2-+.25em;
+  	.char7 {
+  		display: inline-block;
+  		@include rotate(25deg);
+  		margin-left: 0.1em;
 
-	li {
-		padding: 0 0 1em 0;
-	}
-
-	li:before {
-		content: " \25BA";
-		position: relative;
-		margin: 0 0.3em 0 -1.3em;
+  	}
 
 
-	}
-}
+  }
+
+  h2 {
+  	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
+  	@include rem-fallback('font-size', 1.8);
+
+  	.center {
+  		text-align: center;
+  	}
+  }
+
+
+  h2.tag-line {
+  	padding: 0 0 3em 0 ;
+  	text-align: center;
+  	font-weight:normal;
+  	font-family: $sans-serif;
+  	text-transform: uppercase;
+  	@include text-shadow(rgba(black, 0.8) 0.1em 0.1em 0.2em );
+  }
+
+
+
+  h3 {
+  	@include font-size(1.5);
+  	font-weight: normal;
+  	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
+  }
+
+  h4 {
+  	@include font-size(0.7);
+  	font-family: $sans-serif;
+  	font-weight: normal;
+  	letter-spacing: 0.1em;
+  }
+
+
+  ul.show-list {
+
+  	padding: 0 2.25em;
+
+  	li {
+  		padding: 0 0 1em 0;
+  	}
+
+  	li:before {
+  		content: " \25BA";
+  		position: relative;
+  		margin: 0 0.3em 0 -1.3em;
+
+
+  	}
+  }
 
 
 //How it's made drop down
@@ -217,7 +223,7 @@ aside {
 		text-align: center;
 		@include rem-fallback(height, 1);
 		cursor: pointer;
-	
+
 		.drop-down-arrow {
 			display:inline-block;
 			
