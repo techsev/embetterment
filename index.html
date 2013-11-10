@@ -57,18 +57,21 @@
 
 
 
-						$(this).siblings('.description-shrink').slideToggle("slow",function(){
-							rotate($(this).find('.drop-down-arrow'), 180);
-						});
+						$(this).siblings('.description-shrink').slideToggle("slow",function(){});
 
 
 					});
 
 					$(".project H3").click(function(){
 						var h3 = this;
-						$(this).siblings('.project-wrapper').slideToggle("slow",function(){
+						if($(this).siblings('.project-wrapper').css('display') == 'block')
+						{
+							rotate($(h3).find('.drop-down-arrow'), 0);
+
+						} else {
 							rotate($(h3).find('.drop-down-arrow'), 180);
-						});
+						}
+						$(this).siblings('.project-wrapper').slideToggle("slow",function(){});
 					});
 
 					responsiveWords('.text-wrapper');
