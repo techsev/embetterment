@@ -57,12 +57,18 @@ section {
   		@extend .last;
   	}
 
+  	.drop-down-arrow {
+		display:inline-block;	
+	}
+
   }
 
 section.project {
 
 	h3 {
 		cursor: pointer;
+
+
 	}
 
 	.project-wrapper {
@@ -224,10 +230,7 @@ aside {
 		@include rem-fallback(height, 1);
 		cursor: pointer;
 
-		.drop-down-arrow {
-			display:inline-block;
-			
-		}
+		
 	}
 }
 

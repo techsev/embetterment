@@ -65,9 +65,10 @@
 					});
 
 					$(".project H3").click(function(){
+						var h3 = this;
 						$(this).siblings('.project-wrapper').slideToggle("slow",function(){
-						rotate($(this).find('.span'), 180);
-					});
+							rotate($(h3).find('.drop-down-arrow'), 180);
+						});
 					});
 
 					responsiveWords('.text-wrapper');
@@ -256,7 +257,7 @@
 					<h2>Projects & Works</h2>
 				</section>
 				<section class="project dynamic-progress-bar">
-				<h3><span>&#9660;</span> Live Data Progress Bar // 10/10/13</h3>
+				<h3><span class="drop-down-arrow">&#9660;</span> Live Data Progress Bar // 10/10/13</h3>
 					<div class="project-wrapper">
 						<ul><li class="WEIGHT">
 							<div class="progressBar"><div></div></div>
@@ -291,7 +292,7 @@
 							</div>
 						</section> 
 						<section class="project auto-progress-tweeter">
-							<h3><span>&#9660;</span> Automatic Twitter Updates // 11/03/13</h3>
+							<h3><span class="drop-down-arrow">&#9660;</span> Automatic Twitter Updates // 11/03/13</h3>
 							<div class="project-wrapper">
 								<p style="text-align: center;"><a class="twitter-timeline" height="200" data-dnt="true" href="https://twitter.com/search?q=%23TheBettermentOfSeve" data-widget-id="396333849862356992">Tweets about "#TheBettermentOfSeve"</a>
 									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
@@ -340,7 +341,7 @@
 			}
 
 		</style>
-		<h3><span>&#9660;</span> CSS Responsive Words // 11/04/13</h3>
+		<h3><span class="drop-down-arrow">&#9660;</span> CSS Responsive Words // 11/04/13</h3>
 		<div class="project-wrapper">
 			<div class='text-wrapper'>
 
