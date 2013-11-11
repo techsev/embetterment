@@ -213,9 +213,8 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-<<<<<<< HEAD
-=======
+
 
 #Custom File extensions
 *.gg
->>>>>>> gh-pages
+*.sass-cache

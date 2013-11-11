@@ -21,18 +21,45 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-compass');
   
-
-
-
-
   // grunt.registerTask('default', ['compass:dev']);
-grunt.registerTask('default', ['getWeight','compass:dev','postProgress']);
+grunt.registerTask('default', ['combineTemplate','getWeight','compass:dev','postProgress']);
+grunt.registerTask('combineTemplate','Combine the _projects and _posts into the template file',function(){
+  var done = this.async();
+  // Combine template with projects
+  //Step 1: get all the files in _projects directory
+
+  var fs = require('fs');
+  var projectFiles = fs.readdirSync(__dirname+'/_projects/');
+  var projectsHTML = "";
+  var templateHTML = fs.readFileSync(__dirname+'/_templates/main.html');
+  var finalHtml;
+  templateHTML = templateHTML.toString();
+  projectFiles.sort();
+  projectFiles.reverse();
+  
+
+  var i = 0;
+  for(i = 0; i < projectFiles.length; i++)
+  {
+    projectsHTML +=  fs.readFileSync(__dirname+'/_projects/'+projectFiles[i]).toString();
+  }
+
+  finalHTML = templateHTML.replace('{{PROJECTS}}',projectsHTML);
+
+  fs.unlinkSync('index.html');
+  fs.writeFileSync('index.html', finalHTML.toString()); 
+  done();
+
+});
+
+
 grunt.registerTask('getWeight', 'Use twitter API call to get weight', function() {
   
   var done = this.async();
 
   var twitter = require('mtwitter');
   var fs = require('fs');
+
 
 
 var twit = new twitter({

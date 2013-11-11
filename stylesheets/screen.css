@@ -286,61 +286,61 @@ p {
   line-height: 1.5;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 section {
   width: 70%;
   margin: 0 auto;
 }
 @media (max-width: 1600px) {
-  /* line 42, ../sass/screen.scss */
+  /* line 40, ../sass/screen.scss */
   section {
     width: 60%;
   }
 }
 @media (max-width: 1250px) {
-  /* line 42, ../sass/screen.scss */
+  /* line 40, ../sass/screen.scss */
   section {
     width: 80%;
   }
 }
 @media (max-width: 650px) {
-  /* line 42, ../sass/screen.scss */
+  /* line 40, ../sass/screen.scss */
   section {
     width: 95%;
   }
 }
-/* line 49, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 section .column {
   width: 31.49333%;
 }
 @media (max-width: 650px) {
-  /* line 49, ../sass/screen.scss */
+  /* line 47, ../sass/screen.scss */
   section .column {
     width: 100%;
   }
 }
-/* line 68, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 section .drop-down-arrow {
   display: inline-block;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 section.project h3 {
   cursor: pointer;
 }
-/* line 82, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 section.project .project-wrapper {
   display: none;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0.25em 0;
   color: #eeeeee;
   font-weight: bold;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 h1, .h1 {
   font-size: 30px;
   font-size: 3rem;
@@ -349,12 +349,12 @@ h1, .h1 {
   letter-spacing: -0.07em;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 h1.site-name {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
   padding: 1em 0 0 0;
 }
-/* line 111, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 h1.site-name .char7 {
   display: inline-block;
   -webkit-transform: rotate(25deg);
@@ -365,18 +365,18 @@ h1.site-name .char7 {
   margin-left: 0.1em;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 h2 {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
   font-size: 28.8px;
   font-size: 1.8rem;
 }
-/* line 125, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 h2 .center {
   text-align: center;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 h2.tag-line {
   padding: 0 0 3em 0;
   text-align: center;
@@ -386,7 +386,7 @@ h2.tag-line {
   text-shadow: rgba(0, 0, 0, 0.8) 0.1em 0.1em 0.2em;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 h3 {
   font-size: 15px;
   font-size: 1.5rem;
@@ -394,7 +394,7 @@ h3 {
   text-shadow: rgba(255, 255, 255, 0.3) 0.03em 0.03em 0, rgba(0, 0, 0, 0.8) 0.05em 0.05em 0.2em;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 h4 {
   font-size: 7px;
   font-size: 0.7rem;
@@ -403,22 +403,22 @@ h4 {
   letter-spacing: 0.1em;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 ul.show-list {
   padding: 0 2.25em;
 }
-/* line 160, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 ul.show-list li {
   padding: 0 0 1em 0;
 }
-/* line 164, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 ul.show-list li:before {
   content: " \25BA";
   position: relative;
   margin: 0 0.3em 0 -1.3em;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 aside {
   position: relative;
   overflow: hidden;
@@ -426,7 +426,7 @@ aside {
   width: 90%;
   margin: 0 auto;
 }
-/* line 177, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 aside .shadow-liner {
   width: 100%;
   height: 1em;
@@ -435,7 +435,7 @@ aside .shadow-liner {
   box-shadow: #111111 0 0.25em 1em -0.25em;
   position: relative;
 }
-/* line 191, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 aside .description-shrink {
   padding: 2%;
   width: 80%;
@@ -448,16 +448,16 @@ aside .description-shrink {
   letter-spacing: 0.01em;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 202, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 aside .description-shrink p {
   padding: 0.5em 0;
 }
-/* line 206, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 aside .description-shrink a {
   color: #eeeeee;
   text-decoration: none;
 }
-/* line 221, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 aside .description-shrink, aside .pull-down-tab {
   margin: 0 auto;
   background: #494949;
@@ -471,7 +471,7 @@ aside .description-shrink, aside .pull-down-tab {
   -moz-box-shadow: #272727 0em 0.35em 0.5em;
   box-shadow: #272727 0em 0.35em 0.5em;
 }
-/* line 233, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 aside .pull-down-tab {
   width: 60%;
   margin-bottom: 2.25em;
@@ -481,28 +481,28 @@ aside .pull-down-tab {
   cursor: pointer;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 section.topper {
   border-bottom: 2px dashed #6e6e6e;
   margin-bottom: 0.5em;
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 section.about-this, section.dynamic-progress-bar {
   padding-bottom: 3em;
 }
 
-/* line 262, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .progress ul li {
   margin-bottom: 2em;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .progress h5 {
   display: none;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .progressBar {
   width: 100%;
   height: 0.75em;
@@ -516,14 +516,14 @@ section.about-this, section.dynamic-progress-bar {
   border-radius: 25px;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .progressBar div {
   display: block;
   float: left;
   height: 1em;
 }
 
-/* line 291, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .progressBar div::after {
   display: block;
   font-family: Helvetica, Arial, sans-serif;
@@ -536,7 +536,7 @@ section.about-this, section.dynamic-progress-bar {
   font-weight: bold;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 footer {
   margin: 0 auto;
   color: #eeeeee;
@@ -544,7 +544,7 @@ footer {
   font-size: 0.8rem;
   text-align: center;
 }
-/* line 313, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 footer a {
   color: #eeeeee;
 }
