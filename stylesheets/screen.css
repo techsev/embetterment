@@ -144,12 +144,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 41, ../sass/_mixins.scss */
 .OTHERWEBTECHNOLOGIES div.progressBar div {
-  width: 20.83333%;
-  background: #c9357f;
+  width: 22.5%;
+  background: #c5397f;
 }
 /* line 46, ../sass/_mixins.scss */
 .OTHERWEBTECHNOLOGIES div.progressBar div:after {
-  content: "21%";
+  content: "23%";
 }
 
 /* line 41, ../sass/_mixins.scss */
@@ -254,8 +254,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 41, ../sass/_mixins.scss */
 .OVERALL-PROGRESS div.progressBar div {
-  width: 43.07833%;
-  background: #916d7f;
+  width: 43.18944%;
+  background: #906e7f;
 }
 /* line 46, ../sass/_mixins.scss */
 .OVERALL-PROGRESS div.progressBar div:after {
