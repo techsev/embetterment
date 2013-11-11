@@ -172,7 +172,36 @@
 			<section class="projects topper">
 				<h2>Projects & Works</h2>
 			</section>
-			<section class="project responsive-words">
+			<section class="project static-page-templating">
+	<h3><span class="drop-down-arrow">&#9660;</span> Static Page Templating // 11/11/13</h3>
+	<div class="project-wrapper">
+			<p>Now that I have a few more projects to display on my site, it was getting difficult to keep track of everything in one single file. I could have created a templating system in either PHP or Javascript, however, I've been hearing a lot about blog aware static page generators that give you the benefit of a static pages without having to hand code each file.</p>
+			<p>After looking over how <a href="http://www.jekyllrb.com">Jekyll</a> laid out it's structure, I decided to build my own grunt script using similar concepts. I currently have it working for projects but I also plan to use it for my eventual blog as well.</p>
+		<aside class="method-description">
+			<div class="shadow-liner"></div>
+			<div class="description-shrink">
+				<h6>Static Page Templating</h6>
+				<p>The first thing I needed to do was create a few new directories:</p>
+				<ul>
+				<li><strong>_projects:</strong> Where the project snippets go</li>
+				<li><strong>_posts:</strong> Where the (eventual) blog posts will go</li>
+				<li><strong>_templates:</strong> Where the main index.html template go</li>
+				</ul>
+				<p>The template file contains templating variables, at the moment, only <strong>{{PROJECTS}}</strong>. This is where the projects .html files  contained in <strong>"_PROJECTS"</strong> will be inserted</p>
+				<p>Next I created a grunt task that reads in all the files in the <strong>"_PROJECTS"</strong> folder. Using the concepts used in <a href="http://jekyllrb.com/">Jykyll</a>, I named all my project files starting with the date they were created followed by tge project name. For example this file is named <strong>"11-11-2013-static-page-templating.html"</strong> What this lets me do is sort the file in order of date from newest to oldest.</p>
+				<p>With all the project .html files read into a single variable, I'm able to do a simple search and replace using the primary template file then write this new file to index.html in the primary directory.</p>
+				<p>At any point if I want to add a new project snippet, I just need to save it to the <strong>"_PROJECTS"</strong> directory and run grunt and it will be added in order with the rest of the projects.</p>
+				<p>The steps are essentially the same for the blog however, I haven't yet figured out how I want to handle my blog. That's a project for another day.</p>
+
+
+				<div class="clearfix"></div>
+			</div>
+			<div class="pull-down-tab">
+				<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4>
+			</div>
+		</aside>
+	</div>
+</section><section class="project responsive-words">
 	<style type="text/css">
 	/*
 		CSS for Responsive Words

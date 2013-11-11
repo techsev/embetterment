@@ -30,20 +30,32 @@ grunt.registerTask('combineTemplate','Combine the _projects and _posts into the 
 
   var fs = require('fs');
   var projectFiles = fs.readdirSync(__dirname+'/_projects/');
-  var projectsHTML = "";
+  var postFiles = fs.readdirSync(__dirname+'/_posts/');
+  var projectsHTML ="", postsHTML = "", finalHTML = "";
   var templateHTML = fs.readFileSync(__dirname+'/_templates/main.html');
-  var finalHtml;
+  
+
   templateHTML = templateHTML.toString();
   projectFiles.sort();
   projectFiles.reverse();
-  
+  postFiles.sort();
+  postFiles.reverse();
+
 
   var i = 0;
   for(i = 0; i < projectFiles.length; i++)
   {
     projectsHTML +=  fs.readFileSync(__dirname+'/_projects/'+projectFiles[i]).toString();
+    
+  }
+  for(i = 0; i < postFiles.length; i++)
+  {
+    postsHTML +=  fs.readFileSync(__dirname+'/_posts/'+postFiles[i]).toString();
   }
 
+
+
+  templateHTML = templateHTML.replace('{{POSTS}}',postsHTML);
   finalHTML = templateHTML.replace('{{PROJECTS}}',projectsHTML);
 
   fs.unlinkSync('index.html');

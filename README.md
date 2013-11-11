@@ -1,5 +1,11 @@
 #The Betterment of Seve#
 
+Version 1,3
+Date: 2013-11-11
+
+- added project "Static Pages Templating"
+- split main index.html file into smaller snippets and used grunt task to template.
+
 Version 1.2
 Date: 2013-11-04
 
