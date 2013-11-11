@@ -1,0 +1,58 @@
+<section class="project responsive-words">
+	<style type="text/css">
+	/*
+		CSS for Responsive Words
+
+		*/
+		.papabear {
+			display: inline;
+			background-color: green;
+		}
+
+		.babybear {
+			display:none;
+			background-color: red;
+		}
+		@media (max-width: 600px) {
+			.papabear {
+				display: none;
+			}
+
+			.babybear {
+				display:inline;
+			}
+		}
+	</style>
+	<h3><span class="drop-down-arrow">&#9660;</span> CSS Responsive Words // 11/04/13</h3>
+	<div class="project-wrapper">
+		<div class='text-wrapper'>
+			<p> This is a test of a different way to handle Responsive Web Design using Javascript and Cascading Style Sheets. My idea is to make the overall text smaller based on media queries.</p>
+			<p>The words highlighted in green are the full length words, if the words are highlighted in red, then you're seeing the shortend words.</p>
+			<p>By the way, have you ever seen the show "Adventure Time?" it's my favorite. Every time I watch it, I end up laughing out loud. I think I enjoy it so much because my favorite voice actor, mister John Dimagio, is the voice of Jake the dog. </p>  
+		</div>
+		<aside class="method-description">
+			<div class="shadow-liner"></div>
+			<div class="description-shrink">
+				<h6>CSS Responsive Words</h6>
+				<p>This proof of concept script is just something I threw together on my lunch break at work. The idea is to abbreviate words when the screen size of the device is small. Currently just a proof of concept and should not be used on a live site.</p>
+
+				<p>Should this script run on the client side? Probably not, I'll probably end up making this into a grunt task if I ever find it to be a good idea.</p>
+
+				<p>Should this concept be used in real world websites? Probably not, since any search engine crawlers coming to the site might get different version of the content (It's rumored that google crawlers can now handle javascript and media queries)</p>
+
+				<p>I'm considering changing the way I place the alternate text into the html. Currently I wrap the original word in a span, and also append a new span with alt word, but now that means every replaced word is in the code twice. The alternative would be to have the javascript generate CSS styles with span:after tags that in the content field contain the shortened word, but then I lose browser support for IE. For now it works.</p>
+				<p>Here's the original pen I made to test this concept. <p data-height="266" data-theme-id="1941" data-slug-hash="Gnlvj" data-user="techsev" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/techsev/pen/Gnlvj'>Responsive Words</a> by Seve Teruel (<a href='http://codepen.io/techsev'>@techsev</a>) on <a href='http://codepen.io'>CodePen</a></p>
+				<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+				<div class="clearfix"></div>
+			</div>
+			<div class="pull-down-tab">
+				<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4>
+			</div>
+		</aside>
+	</div>
+</section>
