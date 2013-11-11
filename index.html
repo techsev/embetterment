@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=false">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<title>The Betterment of Seve</title>
 	<meta name="description" content="The chronicles of my self-improvement.">
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -39,46 +39,32 @@
 					});
 				}
 
+				function toggleDiv(clickSource, divName){
+					if($(clickSource).siblings(divName).css('display') == 'block')
+					{
+						rotate($(clickSource).find('.drop-down-arrow'), 0);
+
+					} else {
+						rotate($(clickSource).find('.drop-down-arrow'), 180);
+					}
+					$(clickSource).siblings(divName).slideToggle("slow",function(){});
+				}
+
+
+
+
+				
+
 				$( document ).ready(function() {
 					$(".site-name").lettering();
 					$(".site-name").fitText(1.5,{minFontSize: '30px'});
 					$(".tag-line").fitText(3.5,{minFontSize: '12px'});
-
-					$(".pull-down-tab").click(function(){
-
-
-						if($(this).siblings('.description-shrink').css('display') == 'block')
-						{
-							rotate($(this).find('.drop-down-arrow'), 0);
-
-						} else {
-							rotate($(this).find('.drop-down-arrow'), 180);
-						}
-
-
-
-						$(this).siblings('.description-shrink').slideToggle("slow",function(){});
-
-
-					});
-
-					$(".project H3").click(function(){
-						var h3 = this;
-						if($(this).siblings('.project-wrapper').css('display') == 'block')
-						{
-							rotate($(h3).find('.drop-down-arrow'), 0);
-
-						} else {
-							rotate($(h3).find('.drop-down-arrow'), 180);
-						}
-						$(this).siblings('.project-wrapper').slideToggle("slow",function(){});
-					});
-
+					$(".pull-down-tab").click(function(){toggleDiv(this, '.description-shrink')});
+					$(".project H3").click(function(){toggleDiv(this, '.project-wrapper')});
 					responsiveWords('.text-wrapper');
 
 
 				});
-
 			</script>
 
 		</head>
@@ -259,65 +245,8 @@
 				<section class="projects topper">
 					<h2>Projects & Works</h2>
 				</section>
-				<section class="project dynamic-progress-bar">
-				<h3><span class="drop-down-arrow">&#9660;</span> Live Data Progress Bar // 10/10/13</h3>
-					<div class="project-wrapper">
-						<ul><li class="WEIGHT">
-							<div class="progressBar"><div></div></div>
-						</li></ul>
-						<p></p>
-						<aside class="method-description ">
-							<div class="shadow-liner"></div>
-							<div class="description-shrink">
-								<h6>Dynamic Progress Bars using live data</h6>
-								<h7>Oct 10th, 2013</h7>
-								<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
-
-								<ul class="show-list">
-									<li>I want to be able to just change a variable at any time manually.</li>
-									<li>I want to be able to add an project entry to my site that will increase my progress by adding the original value plus my gained “experience”, like a role playing game.</li>
-									<li>I want to be able have certain progress bars be updated by referencing certain APIs and other resources.</li>
-								</ul>
-
-								<p>Option 1 was doable but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
-
-								<p>Option 2 will be trickier, since I’m not planning to have the site use any back end database. I will get to this one later.</p>
-
-								<p>So I’ve decided to work on option 3 for now. I’m going to use node.js and grunt to pull data from twitter to update my weight progress.</p>
-
-								<p>Ideally I wanted to have grunt pull the data from the web service “My Fitness Pal” since I currently use it to track my weight progress, however, their API tools are currently private. However, they do allow for automatic posting to twitter, so I created a twitter account, “SeveIsFat” that was exclusively for this purpose. From there I created a node.js script that pulls the most recent tweet on my account, strips the everything but the amount of weight I’ve lost since I started tracking, and updates a file that holds exclusively that variable which then gets include imported into my <code>_progress.scss</code> file, which is where all my current progress goal variables are saved.</p>
-
-								<p>Once / If I get the My fitness Pal API keys I’ll update this to allow for a direct link to the data, but for now it’s the best I could think of.</p>
-								<div class="clearfix"></div>
-							</div>
-							<div class="pull-down-tab">
-								<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
-							</div>
-						</section> 
-						<section class="project auto-progress-tweeter">
-							<h3><span class="drop-down-arrow">&#9660;</span> Automatic Twitter Updates // 11/03/13</h3>
-							<div class="project-wrapper">
-								<p style="text-align: center;"><a class="twitter-timeline" height="200" data-dnt="true" href="https://twitter.com/search?q=%23TheBettermentOfSeve" data-widget-id="396333849862356992">Tweets about "#TheBettermentOfSeve"</a>
-									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-
-
-
-									<aside class="method-description">
-										<div class="shadow-liner"></div>
-										<div class="description-shrink">
-											<h6>Auto-post progress progression to Main Twitter</h6>
-											<p>Using a lot of what I learned on how to pull in data from twitter, I created a grunt task that posts my overall progress to my primary account. </p>
-
-											<p>First, I found a grunt plugin that reads in a CSS files and turns it into a json file that I imported into my grunt script. From there I found the overall percentage of my progress and used the same twitter api grunt plugin to post a quick update to my primary twitter account.</p>
-											<div class="clearfix"></div>
-										</div>
-										<div class="pull-down-tab">
-											<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
-										</div>
-									</section>
-
-									<section class="project responsive-words">
-										<style type="text/css">
+				<section class="project responsive-words">
+					<style type="text/css">
 		/*
 			CSS for Responsive Words
 
@@ -331,8 +260,6 @@
 				display:none;
 				background-color: red;
 			}
-
-
 			@media (max-width: 600px) {
 				.papabear {
 					display: none;
@@ -342,21 +269,14 @@
 					display:inline;
 				}
 			}
-
 		</style>
 		<h3><span class="drop-down-arrow">&#9660;</span> CSS Responsive Words // 11/04/13</h3>
 		<div class="project-wrapper">
 			<div class='text-wrapper'>
-
 				<p> This is a test of a different way to handle Responsive Web Design using Javascript and Cascading Style Sheets. My idea is to make the overall text smaller based on media queries.</p>
-
 				<p>The words highlighted in green are the full length words, if the words are highlighted in red, then you're seeing the shortend words.</p>
-
 				<p>By the way, have you ever seen the show "Adventure Time?" it's my favorite. Every time I watch it, I end up laughing out loud. I think I enjoy it so much because my favorite voice actor, mister John Dimagio, is the voice of Jake the dog. </p>  
 			</div>
-
-
-
 			<aside class="method-description">
 				<div class="shadow-liner"></div>
 				<div class="description-shrink">
@@ -381,8 +301,63 @@
 					<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
 				</div>
 			</section>
-			
+			<section class="project auto-progress-tweeter">
+				<h3><span class="drop-down-arrow">&#9660;</span> Automatic Twitter Updates // 11/03/13</h3>
+				<div class="project-wrapper">
+					<p style="text-align: center;"><a class="twitter-timeline" height="200" data-dnt="true" href="https://twitter.com/search?q=%23TheBettermentOfSeve" data-widget-id="396333849862356992">Tweets about "#TheBettermentOfSeve"</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+						<aside class="method-description">
+							<div class="shadow-liner"></div>
+							<div class="description-shrink">
+								<h6>Auto-post progress progression to Main Twitter</h6>
+								<p>Using a lot of what I learned on how to pull in data from twitter, I created a grunt task that posts my overall progress to my primary account. </p>
+								<p>First, I found a grunt plugin that reads in a CSS files and turns it into a json file that I imported into my grunt script. From there I found the overall percentage of my progress and used the same twitter api grunt plugin to post a quick update to my primary twitter account.</p>
+								<div class="clearfix"></div>
+							</div>
+							<div class="pull-down-tab">
+								<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
+							</div>
+						</section>
+						<section class="project dynamic-progress-bar">
+							<h3><span class="drop-down-arrow">&#9660;</span> Live Data Progress Bar // 10/10/13</h3>
+							<div class="project-wrapper">
+								<ul><li class="WEIGHT">
+									<div class="progressBar"><div></div></div>
+								</li></ul>
+								<p></p>
+								<aside class="method-description ">
+									<div class="shadow-liner"></div>
+									<div class="description-shrink">
+										<h6>Dynamic Progress Bars using live data</h6>
+										<h7>Oct 10th, 2013</h7>
+										<p>Now that I’ve created the progress tracker, I wanted to be able to update it in a few different ways. </p>
 
-			<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="http://www.github.com/techsev/resume">Resume</a> / <a href="http://www.github.com/techsev/">GitHub</a> / <a href="http://www.linkedin.com/pub/seve-savoie-teruel/1b/149/5a7">LinkedIn</a> / <a href="http://www.codepen.io/techsev">Codepen.io</a> / <a href="http://www.twitter.com/techsev">Twitter</a></footer>
-		</body>
-		</html>
+										<ul class="show-list">
+											<li>I want to be able to just change a variable at any time manually.</li>
+											<li>I want to be able to add an project entry to my site that will increase my progress by adding the original value plus my gained “experience”, like a role playing game.</li>
+											<li>I want to be able have certain progress bars be updated by referencing certain APIs and other resources.</li>
+										</ul>
+
+										<p>Option 1 was doable but not to my liking, rather not have to open a scss file for each change, but for now it’s manageable.</p>
+
+										<p>Option 2 will be trickier, since I’m not planning to have the site use any back end database. I will get to this one later.</p>
+
+										<p>So I’ve decided to work on option 3 for now. I’m going to use node.js and grunt to pull data from twitter to update my weight progress.</p>
+
+										<p>Ideally I wanted to have grunt pull the data from the web service “My Fitness Pal” since I currently use it to track my weight progress, however, their API tools are currently private. However, they do allow for automatic posting to twitter, so I created a twitter account, “SeveIsFat” that was exclusively for this purpose. From there I created a node.js script that pulls the most recent tweet on my account, strips the everything but the amount of weight I’ve lost since I started tracking, and updates a file that holds exclusively that variable which then gets include imported into my <code>_progress.scss</code> file, which is where all my current progress goal variables are saved.</p>
+
+										<p>Once / If I get the My fitness Pal API keys I’ll update this to allow for a direct link to the data, but for now it’s the best I could think of.</p>
+										<div class="clearfix"></div>
+									</div>
+									<div class="pull-down-tab">
+										<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div></aside>
+									</div>
+								</section> 
+
+
+
+
+
+								<footer>Copyright &copy; 2013 Seve Savoie Teruel / <a href="http://www.github.com/techsev/resume">Resume</a> / <a href="http://www.github.com/techsev/">GitHub</a> / <a href="http://www.linkedin.com/pub/seve-savoie-teruel/1b/149/5a7">LinkedIn</a> / <a href="http://www.codepen.io/techsev">Codepen.io</a> / <a href="http://www.twitter.com/techsev">Twitter</a></footer>
+							</body>
+							</html>

@@ -30,6 +30,14 @@ nav {
 	display:none;
 }
 
+p {
+		
+		color: $white;
+		padding: 0.5em;
+		@include rem-fallback('font-size',0.8);
+		line-height: 1.5;
+		
+}
 
 section {
 	width: 70%;
@@ -239,18 +247,11 @@ section.topper {
 	margin-bottom: 0.5em;
 }
 
-//About this site
 
-section.about-this, section.responsive-words {
+
+section.about-this, section.dynamic-progress-bar {
 	padding-bottom: 3em;
-	p {
-		
-		color: $white;
-		padding: 0.5em;
-		@include rem-fallback('font-size',0.8);
-		line-height: 1.5;
-		
-	}
+	
 
 }
 
