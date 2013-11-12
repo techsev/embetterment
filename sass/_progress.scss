@@ -29,10 +29,10 @@ $progress-count: 0;
 }
 
 .CSSLESSSASSCOMPASS {
-	$CSS-knowledge: 75%;
+	$CSS-knowledge: 80%;
 	$LESS-knowledge: 50%;
-	$SASS-knowledge: 50%;
-	$COMPASS-knowledge: 50%;
+	$SASS-knowledge: 60%;
+	$COMPASS-knowledge: 60%;
 	$overall-CSS-LESS-SASS-COMPASS-progress: ($CSS-knowledge + $LESS-knowledge + $SASS-knowledge + $COMPASS-knowledge) / 4;
 	@include progressPercentage($overall-CSS-LESS-SASS-COMPASS-progress);
 	$total-progress: $total-progress + $overall-CSS-LESS-SASS-COMPASS-progress;
@@ -42,8 +42,7 @@ $progress-count: 0;
 }
 
 .GITGITHUB {
-	$GIT-Command-line-knowledge: 30%;
-
+	$GIT-Command-line-knowledge: 40%;
 	$GITHUB-Desktop-software-knowledge: 80%;
 	$version-control-concepts: 50%;
 	$overall-GIT-GITHUB-progress: ($GIT-Command-line-knowledge + $GITHUB-Desktop-software-knowledge + $version-control-concepts) / 3;
@@ -59,7 +58,6 @@ $progress-count: 0;
 	$GRUNT-knowledge: 50%;
 	$NoSQL-Database-knowledge: 10%;
 	$RUBY-On-Rails-Knowledge: 15%;
-
 	$Python-knowledge: 10%;
 	$APP-development-knowledge: 10%;
 	$overall-Other-Web-Technologies-progress: ($NODEJS-knowledge + $GRUNT-knowledge + $NoSQL-Database-knowledge + $RUBY-On-Rails-Knowledge + $Python-knowledge + $APP-development-knowledge) / 6;
@@ -78,7 +76,6 @@ $progress-count: 0;
 	@import "_mfpWeight.scss";
 	$current-weight: $previous-weight - $weight-lost;
 	$overall-weight-progress: (($previous-weight - $current-weight) / ($previous-weight - $goal-weight)) * 100%;
-
 	@include progressPercentage($overall-weight-progress);
 	$total-progress: $total-progress + $overall-weight-progress;
 	$progress-count: $progress-count + 1;
