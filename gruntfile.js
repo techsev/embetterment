@@ -135,7 +135,7 @@ var done = this.async();
     console.log(overall_progress)
 
 
-    var content = {status: 'My Current Life Goal Progress: ' + overall_progress + ' #TheBettermentOfSeve techsev.github.com/embetterment'};
+    var content = {status: 'My Current Life Goal Progress: ' + overall_progress + ' #TheBettermentOfSeve www.TheBettermentOfSeve.com'};
     twit.post('statuses/update', content, function(err, item) {
       console.log(err, item);
       done();
