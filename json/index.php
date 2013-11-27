@@ -18,10 +18,10 @@ $json = NULL;
 
 function trackVisitor($hash = null, $ip = null){
 	global $dbh;
-	if($id != null)
+	if($hash != null)
 	{
 		// Get visitor my id
-		$sql = "SELECT * FROM visitors WHERE hash = $hash";
+		$sql = "SELECT * FROM visitors WHERE hash like '$hash'";
 	} else if($ip != null) 
 	{	//search for visitor using last ip (this is to see if someone at an office is testing on multiple devices using same wifi)
 		$sql = "SELECT * FROM visitors WHERE ip like '$ip'";
@@ -38,6 +38,9 @@ function trackVisitor($hash = null, $ip = null){
 			
 			$sth = $dbh->prepare('UPDATE visitors set last_visit = now(), counter = counter + 1 WHERE id = ' . $results['id']);
 			$sth->execute();
+			
+
+
 			return array('status' => 'success',
 				'id' => $results['id'],
 				'name' => $results['name'],
@@ -56,9 +59,11 @@ function trackVisitor($hash = null, $ip = null){
 
 if (isset($_GET['action']) && $action = $_GET['action'])
 {
+	
 switch($action){
 	case 'trackVisitor':
-						$json = trackVisitor(@$_GET['id'],@$_GET['ip']);
+						
+						$json = trackVisitor($_GET['id'],$_GET['ip']);
 						break;
 						
 

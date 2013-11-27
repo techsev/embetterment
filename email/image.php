@@ -33,9 +33,8 @@ $json = NULL;
 function trackEmail($hash){
 	global $dbh;
 	
-	if(is_numeric($hash))
-	{
-		$sth = $dbh->prepare('UPDATE visitors set email_opened = now() WHERE hash = ' . $hash);
+	
+		$sth = $dbh->prepare('UPDATE visitors set email_opened = now() WHERE hash like "' . $hash . '"');
 		$sth->execute();
 
 			//Future implementations: send myself email when email is opened.
@@ -43,7 +42,7 @@ function trackEmail($hash){
 
 		return true;
 		
-	} else { return false;}
+	
 }
 
 
@@ -56,7 +55,7 @@ if (isset($_GET['action']) && $action = $_GET['action'])
 		case 'trackEmail':
 		if(isset($_GET['id']))
 		{
-			trackEmail(@$_GET['id'],@$_GET['ip']);
+			trackEmail($_GET['id']);
 		} else {
 			die;
 		}

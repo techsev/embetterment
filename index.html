@@ -35,6 +35,29 @@
 				<h2 class="tag-line">The chronicles of my self-improvement.</h2>
 			</div>
 		</header>
+		<section class="tracking">
+		<div class="notification"></div>
+		<aside class="method-description ">
+				<div class="shadow-liner"></div>
+				<div class="description-shrink">
+					<h6>Email tracking pixel and Visitor Tracking</h6>
+
+					<p>There's nothing worst then sending out your resume / cover letter / portfolio and having to just wait and see what happends.</p>
+					<p>Did they get the email? Did they open it? Did they look at my portfolio?</p>
+					<p>After sending out a round of job application and only hearing back from a few, I decided to use the knowledge I have on email creation and deployment and apply it to my job search practise.</p>
+					<p>First, I created a small MySQL database with a single table that held information such as name, visit counter, email opened, last visit e.t.c</p>
+					<p>I then created a PHP tracking pixel that triggers when images are downloaded on my email job applications. This would update the the database record for the job I'm applying for with the date they first opened the email.</p>
+					<p>I also made it so that any links to my portfolio in my email was encoded with the "visitor ID" that corresenponded to the record in my database that would then create a tracking cookie</p>
+					<p>After that, I created a Javascript function that calls to a PHP script that returns a JSON string that has all the visitors information.</p>
+					<p>From there I could use the visitor data to display different messages such bas how many time a certain visitor has been to the site, company name or last time visit</p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="pull-down-tab">
+					<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4></div>
+
+				</aside>
+		</section>
+
 		<section class="about-this">
 			<h2>What's this site about?</h2>
 			<p>Glad you asked. My name is Seve Teruel, I’m an up and coming Web developer working just outside of Toronto and living even further outside of Toronto. I've spent the last year working for a publishing company that mainly deals with selling financial and health publications through email campaigns. I've started this site as a way to show case my progress as both a web developer as well as a human being.</p>
