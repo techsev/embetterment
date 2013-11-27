@@ -1,6 +1,6 @@
 <?php 
 
-include "../database.php";
+include "../includes/database.php";
 
 $file_folder = "http:///www.thebettermentofseve.com/files/";
 $file_resume = "Seve_Teruel_Resume";
