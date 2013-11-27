@@ -7,8 +7,19 @@ $file_resume = "Seve_Teruel_Resume";
 
 
 function sendResume($extension = 'pdf'){
-	global $file_folder, $file_resume;
+	global $file_folder, $file_resume, $dbh;
+
+	if(isset($_GET['visitorId']))
+	{
+		$sth = $dbh->prepare("UPDATE visitors set resume_downloaded = ? WHERE hash like ?");
+		$sth->execute(array($extension,$_GET['visitorId']));
+
+		
+	}
+
 	header( 'Location: '. $file_folder . $file_resume . '.' . $extension );
+
+
 
 }
 
