@@ -218,3 +218,4 @@ pip-log.txt
 #Custom File extensions
 *.gg
 *.sass-cache
+database.php

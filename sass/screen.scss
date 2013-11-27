@@ -90,6 +90,25 @@ section.project {
 	}
 }
 
+section.tracking {
+
+	.notification {
+		background-color: lighten($grey,20%);
+		@include border-radius(10px);
+		@include box-sizing(border-box);
+		@include box-shadow($black 2px 2px 2px);
+		display: none;
+		padding: 2em;
+
+
+
+		p {
+			text-align: center;
+
+		}
+	}
+}
+
   h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   	padding: 0.25em 0;
 
@@ -124,7 +143,7 @@ section.project {
 
   }
 
-  h2 {
+  h2, .h2 {
   	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
   	@include rem-fallback('font-size', 1.8);
 
@@ -145,13 +164,13 @@ section.project {
 
 
 
-  h3 {
+  h3, .h3 {
   	@include font-size(1.5);
   	font-weight: normal;
   	@include text-shadow(rgba(white,0.3) 0.03em 0.03em 0, rgba(black, 0.8) 0.05em 0.05em 0.2em);
   }
 
-  h4 {
+  h4, .h4 {
   	@include font-size(0.7);
   	font-family: $sans-serif;
   	font-weight: normal;
