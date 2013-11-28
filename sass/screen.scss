@@ -91,13 +91,14 @@ section.project {
 }
 
 section.tracking {
+	display: none;
 
 	.notification {
 		background-color: lighten($grey,20%);
 		@include border-radius(10px);
 		@include box-sizing(border-box);
 		@include box-shadow($black 2px 2px 2px);
-		display: none;
+		
 		padding: 2em;
 
 

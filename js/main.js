@@ -40,7 +40,10 @@ function getQueryVariable(variable)
 function displayTrackingMessage(data)
 {
 	//Array of all the possible messages for visitor tracking.
-	document.cookie = 'visitor_id=' + data.id + ';expires=Sun, 06 Nov 2022 21:43:15 GMT';
+	if(data.id != 'null')
+	{
+		document.cookie = 'visitor_id=' + data.id + ';expires=Sun, 06 Nov 2022 21:43:15 GMT';
+	}
 	var messages = [];
 	messages['agency'] = new Array(); //
 	messages['company'] = new Array();
@@ -67,8 +70,9 @@ function displayTrackingMessage(data)
 	};
 	 
 	var notification = $('.notification');
+	var tracking = $('.tracking');
 	notification.html(messages[data.type][messageIndex]);
-	notification.show();
+	tracking.show();
 }
 
 $( document ).ready(function() {
@@ -91,7 +95,7 @@ $( document ).ready(function() {
 				displayTrackingMessage(data);
 			}
 		});
-	} else if(!isNaN(Number(visitor_cookie_id)) && visitor_cookie_id != '') {
+	} else if(visitor_cookie_id != ''  && visitor_cookie_id != 'null') {
 
 		$.getJSON("json/?action=trackVisitor&id=" + visitor_cookie_id,function(data){
 			if(data.status = 'success')
@@ -100,6 +104,7 @@ $( document ).ready(function() {
 			}
 		});
 	} else {
+		/*
 		$.getJSON('http://smart-ip.net/geoip-json?callback=?',function(data){
 			$.getJSON("json/?action=trackVisitor&ip=" + data.host,function(data){
 				if(data.status = 'success')
@@ -108,6 +113,7 @@ $( document ).ready(function() {
 				}
 			});
 		});
+		*/
 
 	}
 

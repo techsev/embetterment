@@ -42,7 +42,7 @@ function trackVisitor($hash = null, $ip = null){
 
 
 			return array('status' => 'success',
-				'id' => $results['id'],
+				'id' => $results['hash'],
 				'name' => $results['name'],
 				'type' => $results['type'],
 				'job_opening' => $results['job_opening'],
