@@ -82,7 +82,7 @@ $number_of_cols: 12;
 	
 	float: left;
 	position: relative;
-
+  margin-left: $gutter_size;
 	@include breakpoint(big) { margin-left: $gutter_size; }
   	@include breakpoint(medium) { margin-left: $gutter_size; }
  	@include breakpoint(small) { margin-left: 0; }

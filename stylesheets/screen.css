@@ -72,6 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .column {
   float: left;
   position: relative;
+  margin-left: 2.76%;
 }
 @media (max-width: 1600px) {
   /* line 81, ../sass/_mixins.scss */
