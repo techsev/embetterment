@@ -57,7 +57,6 @@
 
 				</aside>
 		</section>
-
 		<section class="about-this">
 			<h2>What's this site about?</h2>
 			<p>Glad you asked. My name is Seve Teruel, I’m an up and coming Web developer working just outside of Toronto and living even further outside of Toronto. I've spent the last year working for a publishing company that mainly deals with selling financial and health publications through email campaigns. I've started this site as a way to show case my progress as both a web developer as well as a human being.</p>
@@ -140,7 +139,7 @@
 						<div class="progressBar"><div></div></div>
 					</li>
 					<li class="LOTTERYWINNER">
-						<h4>Lottery Winnings</h4>
+						<h4>Lottery Winner</h4>
 						<div class="progressBar"><div></div></div>
 					</li>
 				</ul>
@@ -190,6 +189,31 @@
 				<h2>Projects & Works</h2>
 			</section>
 			<section class="project static-page-templating">
+	<h3><span class="drop-down-arrow">&#9660;</span> Static Page Templating // 11/11/13</h3>
+	<div class="project-wrapper">
+		<h2><a href="http://thebettermentofseve.com/?id=2aee44f298">Click here to refresh site with test tracking data</a></h2></p>
+		<aside class="method-description">
+			<div class="shadow-liner"></div>
+			<div class="description-shrink">
+				<h6>Email tracking pixel and Visitor Tracking</h6>
+
+				<p>There's few thing worst then sending out your resume / cover letter / portfolio and having to just wait and see what happends.</p>
+				<p>Did they get the email? Did they open it? Did they look at my portfolio?</p>
+				<p>After sending out a round of job application and only hearing back from a few, I decided to use the knowledge I have on email creation and deployment and apply it to my job search practise.</p>
+				<p>First, I created a small MySQL database with a single table that held information such as name, visit counter, email opened, last visit e.t.c</p>
+				<p>I then created a PHP tracking pixel that triggers when images are downloaded on my email job applications. This would update the database record for the job I'm applying to with the date they first opened the email.</p>
+				<p>I also made it so that any links to my portfolio in my email was encoded with the "visitor ID" that corresenponded to the record in my database that would then create a tracking cookie</p>
+				<p>After that, I created a Javascript function that calls to a PHP script that returns a JSON string that has all the visitors information.</p>
+				<p>From there I could use the visitor data to display different messages such bas how many time a certain visitor has been to the site, company name or last time visit</p>
+
+				<div class="clearfix"></div>
+			</div>
+			<div class="pull-down-tab">
+				<h4><span class="drop-down-arrow">&#9660;</span> How was this made <span class="drop-down-arrow">&#9660;</span></h4>
+			</div>
+		</aside>
+	</div>
+</section><section class="project static-page-templating">
 	<h3><span class="drop-down-arrow">&#9660;</span> Static Page Templating // 11/11/13</h3>
 	<div class="project-wrapper">
 			<p>Now that I have a few more projects to display on my site, it was getting difficult to keep track of everything in one single file. I could have created a templating system in either PHP or Javascript, however, I've been hearing a lot about blog aware static page generators that give you the benefit of a static pages without having to hand code each file.</p>
